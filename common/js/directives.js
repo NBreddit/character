@@ -35,7 +35,7 @@ var notes = {
  * Angular *
  ***********/
 
-var app = angular.module('optc');
+var app = angular.module('unb');
 var directives = { }, filters = { };
 
 /************************
@@ -53,26 +53,8 @@ directives.toInt = function() {
     };
 };
 
-/**********************
- * Element directives *
- **********************/
-
-directives.linkButton = function() {
-    return {
-        restrict: 'E',
-        replace: true,
-        templateUrl: '../common/views/links.html',
-        scope: { exclude: '@' },
-        link: function(scope, element, attrs) {
-            element.find(".trigger").click(function() {
-                element.toggleClass("active"); 
-            });
-        }
-    };
-};
-
 /***********
- * Filters * 
+ * Filters *
  ***********/
 
 filters.decorate = function() {
@@ -81,7 +63,7 @@ filters.decorate = function() {
         if (input.constructor == Array) input = input[0];
         if (input.constructor != String) return 'N/A';
         return input
-            .replace(/\[?(STR|DEX|QCK|PSY|INT)\]?/g,'<span class="badge $1">$1</span>')
+            .replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>')
             .replace(/\[RCV\]/g,'<span class="badge RCV">RCV</span>')
             .replace(/\[TND\]/g,'<span class="badge TND"><i class="tnd-icon"></i> TND</span>')
             .replace(/\[EMPTY\]/g,'<span class="badge EMPTY"><i class="fa fa-circle-o"></i> EMPTY</span>')
@@ -97,19 +79,6 @@ filters.range = function() {
         total = parseInt(total,10);
         for (var i=0;i<total;++i) input.push(i);
         return input;
-    };
-};
-
-filters.notes = function() {
-    return function(input) {
-        if (!input) return input;
-        return input.trim().replace(/#\{(.+?)\}/g,function(x,y) {
-            var tokens = y.trim().split(/:/);
-            if (!tokens.length || !notes.hasOwnProperty(tokens[0].trim())) return x;
-            return notes[tokens[0].trim()].replace(/#(\d+)/g,function(a,b) {
-                return (tokens[parseInt(b,10)] || '').trim();
-            });
-        });
     };
 };
 

@@ -1,6 +1,6 @@
 (function() {
 
-var app = angular.module('optc');
+var app = angular.module('unb');
 
 app.controller('DismissalCtrl', function(ngDialog, $templateCache) {
 

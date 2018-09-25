@@ -1,95 +1,62 @@
 window.abilities = [
-
-    {
-        name: 'Damage reduction',
-        levels: [
-            [ 5, 'Received damage reduced by 3%' ],
-            [ 10, 'Received damage reduced by 5%' ],
-            [ 15, 'Received damage reduced by 10%' ]
-        ]
-    },
-
-    {
-        name: 'Charge specials',
-        levels: [
-            [ 10, 'Cooldown of all specials reduced by 1 turn at the start of the fight' ],
-            [ 20, 'Cooldown of all specials reduced by 2 turns at the start of the fight' ]
-        ]
-    },
-
-    {
-        name: 'Bind resistance',
-        levels: [
-            [ 10, 'Bind duration reduced by 1 turn' ],
-            [ 15, 'Bind duration reduced by 2 turns' ],
-            [ 20, 'Bind duration reduced by 3 turns' ]
-        ]
-    },
-
-    {
-        name: 'Despair resistance',
-        levels: [
-            [ 10, 'Despair duration reduced by 1 turn' ],
-            [ 15, 'Despair duration reduced by 2 turns' ],
-            [ 20, 'Despair duration reduced by 3 turns' ]
-        ]
-    },
-
-    {
-        name: 'Auto-heal',
-        levels: [
-            [ 5, '100 HP recovered at the end of each turn' ],
-            [ 8, '200 HP recovered at the end of each turn' ],
-            [ 12, '300 HP recovered at the end of each turn' ],
-            [ 16, '500 HP recovered at the end of each turn' ],
-            [ 24, '1000 HP recovered at the end of each turn' ]
-        ]
-    },
-
-    {
-        name: 'RCV boost',
-        levels: [
-            [ 5, 'Crew\'s RCV boosted by 100 units' ],
-            [ 8, 'Crew\'s RCV boosted by 200 units' ],
-            [ 12, 'Crew\'s RCV boosted by 300 units' ],
-            [ 16, 'Crew\'s RCV boosted by 500 units' ],
-            [ 24, 'Crew\'s RCV boosted by 1000 units' ]
-        ]
-    },
-
-    {
-        name: 'Slot rate boost',
-        levels: [
-            [ 5, 'Boosted chances (20%) of getting matching orbs' ],
-            [ 10, 'Boosted chances (22.2%) of getting matching orbs' ],
-            [ 20, 'Boosted chances (25%) of getting matching orbs' ]
-        ]
-    },
-
-    {
-        name: 'Poison resistance',
-        levels: [
-            [ 10, 'Poison damage reduced by 20%' ],
-            [ 15, 'Poison damage reduced by 50%' ],
-            [ 20, 'Poison damage reduced by 100%' ]
-        ]
-    },
-
-    {
-        name: 'Map damage resistance',
-        levels: [
-            [ 10, 'Map damage reduced by 50%' ],
-            [ 20, 'Map damage reduced by 100%' ]
-        ]
-    },
-
-    {
-        name: 'Resilience',
-        levels: [
-            [ 5, '5% chance to withstand a lethal enemy hit' ],
-            [ 10, '10% chance to withstand a lethal enemy hit' ],
-            [ 20, '20% chance to withstand a lethal enemy hit' ]
-        ]
-    }
-
+  {
+    'ailment-remove': "Removes status ailments when moving to next map",
+    "atk-combo": "Boosts ATK by [x]x during combos",
+    "atk-up": "Boosts ATK by [x]",
+    "atkdown-attack": "[x]% chance of ATK reduction for 4 turns when attacking",
+    "atkdown-combo": "Combos have a [x]% chance of ATK reduction for 4 turns",
+    "atkdown-rate": "Boosts ATK reduction rate by [x]%",
+    "atkdown-red": "Lowers chance of receiving ATK reduction by [x]% (Not F Skills)",
+    "barrier-destroy": "Removes barriers when attacking",
+    "barrier-ignore": "Ignores barriers when attacking",
+    "bod-red": "Reduces damage from [BOD] enemies by [x]%",
+    "bod-up": "Boosts damage against [BOD] enemies by [x]%",
+    "brv-red": "Reduces damage from [BRV] enemies by [x]%",
+    "brv-up": "Boosts damage against [BRV] enemies by [x]%",
+    "chakra-jutsu-0": "[x]% chance to reduce chakra consumed by Normal Jutsu to 0",
+    "chakra-maprec": "Restores [x] chakra when moving to next map",
+    "chakra-rec": "[x]% chance to restore 1 chakra when attacked",
+    "chakra-red": "Reduces chakra gauge by [x]",
+    "chakra-ult-0": "[x]% chance to reduce chakra consumed by Ultimate Jutsu to 0",
+    "chakraseal-red": "Lowers chance of being chakra recovery sealed by [x]% (Not F Skills)",
+    "counter-red": "Lowers chance of being countered by [x]%",
+    "crit-combo": "Boosts critical rate by [x]x during combos",
+    "crit-rate": "Boosts critical rate by [x]x",
+    "death-dmg": "Deals [x] fixed damage to enemy's front row upon death",
+    "dmg-red": "Reduces damage taken by [x]%",
+    "dodge": "[x]% chance of dodging an attack",
+    "effect-duration-up": "Extends status effect durations by [x] turn(s)",
+    "effect-jutsu-up": "Extends status effect durations of Normal Jutsu by [x] turn(s)",
+    "effect-rate": "Boosts the rate of status ailments by [x]%",
+    "effect-ult-up": "Extends status effect durations of Ultimate Jutsu by [x] turn(s)",
+    "heal-up": "Increases healing amount on jutsus by [x]",
+    "hp-combo": "Restores [x] HP during combos",
+    "hp-heal": "Restores [x] HP every turn",
+    "hp-maprec": "Restores [x] HP when moving to next map",
+    "hp-up": "Boosts HP by [x]",
+    "hpseal-red": "Lowers chance of being HP recovery sealed by [x]% (Not F Skills)",
+    "hpseal": "[x]% chance to seal HP recovery for 4 turns when attacking",
+    "hrt-red": "Reduces damage from [HRT] enemies by [x]%",
+    "hrt-up": "Boosts damage against [HRT] enemies by [x]%",
+    "immob-rate": "Boosts immobilization rate by [x]%",
+    "immob-red": "Lowers chance of being immobilized by [x]% (Not F Skills)",
+    "jutsu-aoe": "Normal Jutsu hits all enemies in range",
+    "jutsu-multi": "Increases multipler of Normal Jutsu by [x]",
+    "multi-up": "Increases multipler of both jutsus by [x]",
+    "pc-chakra": "Start with [x] extra chakra in Phantom Castle",
+    "seal-rate": "Boosts jutsu sealing rate by [x]%",
+    "seal-red": "Lowers chance of being jutsu sealed by [x]% (Not F Skills)",
+    "skl-red": "Reduces damage from [SKL] enemies by [x]%",
+    "skl-up": "Boosts damage against [SKL] enemies by [x]%",
+    "slip-combo": "[x]% chance of slip damage for 4 turns during combos",
+    "slip-rate": "Boosts slip damage rate by [x]%",
+    "slip-red": "Lowers chance of receiving slip damage by [x]% (Not F Skills)",
+    "spd-up": "Boosts SPD by [x]",
+    "substitution-ignore": "Ignores substitution when attacking",
+    "type-null": "Nullifies type disadvantange when attacking",
+    "ult-aoe": "Ultimate Jutsu hits all enemies in range",
+    "ult-multi-up": "Increases multipler of Ultimate Jutsu by [x]",
+    "wis-red": "Reduces damage from [WIS] enemies by [x]%",
+    "wis-up": "Boosts damage against [WIS] enemies by [x]%"
+  }
 ];

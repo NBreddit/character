@@ -1,0 +1,265 @@
+<div class="backdrop" ui-sref="^"></div>
+
+<div class="inner-container" go-back>
+
+    <div class="custom-modal">
+        <div class="modal-dialog">
+            <div class="modal-content animated rollIn">
+
+                <div class="modal-header">
+                    <div class="fa fa-arrow-left btn btn-default back-button" ng-if="withButton" ng-click="onBackClick()"></div>
+                    {{unit.name}}
+                </div>
+
+                <div class="modal-body" ng-class="{ preview: unit.preview }">
+
+                    <div ng-if="!unit.incomplete" class="slot huge" decorate-slot big="true" uid="unit.number + 1"></div>
+
+                    <div ng-if="unit.preview" class="alert alert-warning">
+                        <b>WARNING:</b> Currently viewing the preview of an upcoming unit not yet released, the information provided may not be accurate.
+                    </div>
+
+                    <div ng-if="unit.incomplete && !unit.preview" class="alert alert-danger">
+                        This unit's complete information is still partially missing and will soon be added.
+                    </div>
+
+                    <div class="panel panel-default stats-pane">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <th ng-if="!hybrid">Affiliation</th>
+                                    <th ng-if="hybrid">Affiliation 1</th>
+                                    <th ng-if="hybrid">Affiliation 2</th>
+                                    <th>Type</th>
+                                    <th>Rarity</th>
+                                    <th colspan="{{hybrid ? 2 : 1}}">Base Cost</th>
+                                </tr>
+                                <tr>
+                                    <td ng-if="!hybrid"><img src="../img/affi/{{unit.affil}}.png" title="{{unit.affil}}"></td>
+                                    <td ng-if="hybrid"><img src="../img/affi/{{unit.affil[0]}}.png" title="{{unit.affil[0]}}"></td>
+                                    <td ng-if="hybrid"><img src="../img/affi/{{unit.affil[1]}}.png" title="{{unit.affil[1]}}"></td>
+                                    <td><img src="../img/type/{{unit.type}}.png" title="{{unit.type}}"></td>
+                                    <td>{{unit.stars}}</td>
+                                    <td>{{unit.cost}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Range</th>
+                                    <th>Chakra</th>
+                                    <th>Max Level</th>
+                                    <th>Normal Hit Count</th>
+                                    <th>Obtained From</th>
+                                    <!--<th colspan="{{hybrid ? 2 : 1}}">EXP to Max</th>-->
+                                </tr>
+                                <tr>
+                                    <td>{{unit.range}}</td>
+                                    <td>{{unit.chakra}}/{{unit.chakra*2}}</td>
+                                    <td>{{unit.maxLevel}}</td>
+                                    <td>{{details.hit}}</td>
+                                    <td>{{details.obtain}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <uib-tabset>
+                        <uib-tab heading="Normal">
+                          <h3 class="page-header">Stats</h3>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>HP</th>
+                                        <th>ATK</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{unit.maxLevel}}</td>
+                                        <td>{{unit.maxHP | number}}</td>
+                                        <td>{{unit.maxATK | number}}</td>
+                                    </tr>
+                                    <tr ng-if="limitbreak">
+                                        <td>Limit Break</td>
+                                        <td>{{unit.limitHP | number}}</td>
+                                        <td>{{unit.limitATK | number}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3 class="page-header">Skills</h3>
+
+                            <div class="panel panel-default">
+                                <table class="table table-striped-column abilities">
+                                    <tbody>
+                                        <tr>
+                                            <td>Field Skill</td>
+                                            <td>
+                                                <add-field></add-field>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buddy Skill</td>
+                                            <td>
+                                                <add-buddy></add-buddy>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jutsu<div ng-if="details.jutsuHit">{{details.jutsuHit}} Hit Count</div></td>
+                                            <td>
+                                                <strong class="jutsuName" ng-if="details.jutsuName">{{details.jutsuName}}</strong>
+                                                <div ng-bind-html="details.jutsu | decorate"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ultimate Jutsu<div ng-if="details.ultHit">{{details.ultHit}} Hit Count</div></td>
+                                            <td>
+                                                <strong class="ultName" ng-if="details.ultName">{{details.ultName}}</strong>
+                                                <div  ng-bind-html="details.ult | decorate"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <table class="table table-striped-column abilities">
+                                    <tbody>
+                                        <tr>
+                                            <td>Abilties</td>
+                                            <td>
+                                                <add-abilities></add-abilities>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </uib-tab>
+                        <uib-tab heading="PvP" ng-if="!unit.incomplete">
+                          <h3 class="page-header">Stats</h3>
+                          <table class="table table-striped table-bordered">
+                              <thead>
+                                  <tr>
+                                      <th>Level</th>
+                                      <th>HP</th>
+                                      <th>ATK</th>
+                                      <th>SPD</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>{{unit.maxLevel}}</td>
+                                      <td>{{unit.pvpHP | number}}</td>
+                                      <td>{{unit.pvpATK | number}}</td>
+                                      <td>{{unit.pvpSPD | number}}</td>
+                                  </tr>
+                                  <tr ng-if="limitbreak">
+                                      <td>Limit Break</td>
+                                      <td>{{unit.limitHPPVP | number}}</td>
+                                      <td>{{unit.limitATKPVP | number}}</td>
+                                      <td>{{unit.limitSPD | number}}</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+
+                          <h3 class="page-header">Skills</h3>
+
+                          <div class="panel panel-default">
+                              <table class="table table-striped-column abilities">
+                                  <tbody>
+                                      <tr>
+                                          <td>Field Skill</td>
+                                          <td>
+                                              <add-field></add-field>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Buddy Skill</td>
+                                          <td>
+                                              <add-buddy></add-buddy>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Jutsu<div ng-if="details.PVPjutsuHit">{{details.PVPjutsuHit}} Hit Count</div>
+                                          <div ng-if="!details.PVPjutsuHit">{{details.jutsuHit}} Hit Count</div></td>
+                                          <td>
+                                              <strong class="PVPjutsuName" ng-if="details.PVPjutsuName">{{details.PVPjutsuName}}</strong>
+                                              <strong class="PVPjutsuName" ng-if="!details.PVPjutsuName">{{details.jutsuName}}</strong>
+                                              <div ng-if="details.PVPjutsu" ng-bind-html="details.PVPjutsu | decorate"></div>
+                                              <div ng-if="!details.PVPjutsu" ng-bind-html="details.jutsu | decorate"></div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Ultimate Jutsu<div ng-if="details.ultHit">{{details.ultHit}} Hit Count</div></td>
+                                          <td>
+                                              <strong class="PVPultName" ng-if="details.PVPultName">{{details.PVPultName}}</strong>
+                                              <strong class="PVPultName" ng-if="!details.PVPultName">{{details.ultName}}</strong>
+                                              <!-- same special, no stages -->
+                                              <div ng-bind-html="details.PVPult | decorate"></div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+
+                          <div class="panel panel-default">
+                              <table class="table table-striped-column abilities">
+                                  <tbody>
+                                      <tr>
+                                          <td>Abilties</td>
+                                          <td>
+                                              <add-pvp-abilities></add-pvp-abilities>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                        </uib-tab>
+                    </uib-tabset>
+
+                    <div class="panel panel-default">
+                        <table class="table table-striped-column abilities">
+                            <tbody>
+                                <tr>
+                                    <td>Sync Skills</td>
+                                    <td>
+                                        <add-sync></add-sync>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Evolutions -->
+
+                    <h3 class="page-header" ng-if="evolution.evolution" ng-hide="hidden.evolution">Awakening Materials</h3>
+
+                    <table class="table table-striped table-centered table-bordered table-textless"
+                            ng-if="evolution.evolution && !evolution.evolution.length" ng-hide="hidden.evolution">
+                        <tbody>
+                            <tr>
+                                <td><evolution unit="unit" evolvers="evolution.evolvers"
+                                    evolution="evolution.evolution" size="medium"></evolution></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Other Names -->
+
+                    <h3 class="page-header">Other Names</h3>
+
+                    <add-names></add-names>
+
+                    <!-- Tags -->
+
+                    <h3 class="page-header">Tags</h3>
+
+                    <add-tags></add-tags>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

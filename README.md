@@ -1,6 +1,6 @@
-# optc-db.github.io
+# unb-db.github.io
 
-The Continuation of the highly loved and apreciated OPTC Database.
+The Continuation of the highly loved and apreciated unb Database.
 
 This is a Database for all things One Piece Treasure Cruise, including Stats, Drops, Sockets and a Damage Calculator.
 
@@ -17,7 +17,7 @@ It is hosted on github pages, although you can just download it and run a local 
 
 # Installation
 
-Just download it and run it in some kind of Live preview or via xampp. Or better yet access it via http://optc-db.github.io
+Just download it and run it in some kind of Live preview or via xampp. Or better yet access it via http://unb-db.github.io
 
 Keep in mind though that the images are not hosted here, but instead linked from the offical site. So you would need an internet connection to see them.
 
