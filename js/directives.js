@@ -32,17 +32,17 @@ directives.characterTable = function($rootScope, $timeout, $compile, $storage) {
 					var id = data[data.length - 1] + 1;
 					// cosmetic fixes
                     //types
-                    var typeBox = row.cells[2];
+                    var typeBox = row.cells[3];
                     var type = typeBox.textContent;
                     $(typeBox).html('<img src="../img/type/' + type + '.png">');
 
                     //stars
-                    var starBox = row.cells[9];
+                    var starBox = row.cells[2];
                     var rarity = starBox.textContent;
                     $(starBox).html('<img src="../img/rarity/' + rarity + '.png">');
 
                     //affil
-                    var affiBox = row.cells[3];
+                    var affiBox = row.cells[5];
                     var affil = affiBox.textContent;
 
                     if (affil.indexOf(',') >= 0) {
@@ -106,8 +106,7 @@ directives.decorateSlot = function() {
             if (scope.big)
                 element[0].style.backgroundImage = 'url(' + Utils.getBigThumbnailUrl(scope.uid) + ')';
             else
-                element[0].style.backgroundImage = 'url(' + Utils.getScroll(scope.uid) + ')';
-                //element[0].style.backgroundImage = 'url(' + Utils.getGlobalThumbnailUrl(scope.uid) + '), url(' + Utils.getThumbnailUrl(scope.uid) + ')';
+                element[0].innerHTML = '<img src="' + Utils.getScroll(scope.uid) + '"></img>';
         }
     };
 };
@@ -289,11 +288,14 @@ directives.addNames = function($stateParams, $rootScope) {
             var id = $stateParams.id, data = details[id];
 
                 var currentAliases = name[id];
-                if(currentAliases[0]){
+                if(typeof currentAliases != 'undefined'){
                     var otherAliases = currentAliases.toString().replace(/(.*?), (.*?),/,"");
                     element.append($('<tr><td>'+ otherAliases +'</td></tr>'));
                 }
+                else {
+                  element.append($('<tr><td>None</td></tr>'));
                 }
+        }
     }
 };
 
@@ -420,6 +422,55 @@ directives.addSync = function($stateParams, $rootScope) {
                 }
               }
           }
+    }
+};
+
+directives.addPvpSync = function($stateParams, $rootScope) {
+    return {
+        restrict: 'E',
+        replace: true,
+        template: '<td></td>',
+        link: function(scope, element, attrs) {
+          var loop = window.details[$stateParams.id].sync;
+          var syncDesc = window.details[$stateParams.id].syncD;
+
+            //regular sync
+            for(var y = 0; y < loop.length; y++){
+              var sync = loop[y];
+              var syncWith = window.sync[0][sync];
+              var desc= syncDesc[y];
+              var descFull = window.sync[0][desc];
+              var value= window.details[$stateParams.id]['syncV'][y];
+              var fullSync = descFull.toString().replace('[x]', value);
+              var decoratedName = syncWith.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
+              var decorated = fullSync.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
+
+                //pvp sync
+                if (typeof window.details[$stateParams.id].PVPsyncD != 'undefined') {
+                  var PVPloop = window.details[$stateParams.id].PVPsyncD;
+                  var PVPsync = PVPloop[y];
+
+                  if (PVPsync != '') {
+                    var PVPdesc= window.sync[0][PVPsync];
+                    var PVPvalue= window.details[$stateParams.id]['PVPsyncV'][y];
+                    var PVPfullSync = PVPdesc.toString().replace('[x]', PVPvalue);
+                    var PVPdecorated = PVPfullSync.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
+                    element.append($('<b>'+ (y+1) + '. Sync with ' + decoratedName + '</b>'));
+                    element.append($('<td>' + PVPdecorated + '</td>'));
+                  }
+                  //fallback to regular sync if blank
+                  else {
+                    element.append($('<b>'+ (y+1) + '. Sync with ' + decoratedName + '</b>'));
+                    element.append($('<td>' + decorated + '</td>'));
+                  }
+                }
+                //fallback to regular sync if blank
+                else {
+                  element.append($('<b>'+ (y+1) + '. Sync with ' + decoratedName + '</b>'));
+                  element.append($('<td>' + decorated + '</td>'));
+                }
+            }
+        }
     }
 };
 

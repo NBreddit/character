@@ -13,7 +13,6 @@ angular.module('unb') .run(function($rootScope, $timeout, $storage, MATCHER_IDS)
 
     var addImage = function(data, type, row, meta) {
         return '<img class="slot small" data-original="' + Utils.getThumbnailUrl(row[0]) + '"> ' +
-            //return '<img class="slot small" data-original="' + Utils.getGlobalThumbnailUrl(row[0]) + '" onerror="this.onerror=null;this.src=\'' + Utils.getThumbnailUrl(row[0]) + '\';"> ' +
             '<a ui-sref="main.search.view({ id: ' + parseInt(row[0],10) + '})">' + data + '</a>';
     };
 
@@ -41,14 +40,17 @@ angular.module('unb') .run(function($rootScope, $timeout, $storage, MATCHER_IDS)
         var result = [
             { title: 'ID' },
             { title: 'Name', render: addImage },
+            { title: 'Rarity' },
             { title: 'Type' },
-            { title: 'Affil.' },
             { title: 'Cost' },
+            { title: 'Affil.' },
             { title: 'Chakra' },
             { title: 'Range' },
             { title: 'HP' },
             { title: 'ATK' },
-            { title: 'Rarity' },
+            { title: 'PvP HP' },
+            { title: 'PvP ATK' },
+            { title: 'PvP SPD' },
         ];
         return result;
     };
@@ -223,18 +225,30 @@ angular.module('unb') .run(function($rootScope, $timeout, $storage, MATCHER_IDS)
      ***********************/
 
     var data = window.units.filter(function(x) { return x.name && !x.name.includes("Limit Break") && !x.name.includes("Dual Unit"); }).map(function(x,n) {
+
+        var rarityCheck = false;
+        if (x.stars == 6 || x.stars == 61)
+          rarityCheck = true;
+
+        var limitBreakCheck = false;
+        if (typeof x.limitHP != 'undefined')
+          limitBreakCheck = true;
+
         var result = [
             ('000' + (x.number+1)).slice(-padding),
             x.name,
+            x.stars,
             x.type,
 
-        x.affil.constructor == Array ? x.affil.join(', ') : x.affil,
             x.cost,
-            (x.chakra + '/' + (x.chakra*2)),
+        x.affil.constructor == Array ? x.affil.join(', ') : x.affil,
+            ... (rarityCheck ? [(x.chakra + '/' + (x.chakra*2))] : [x.chakra] ),
             x.range,
-            x.maxHP,
-            x.maxATK,
-            x.stars,
+            ... (limitBreakCheck ? [x.limitHP] : [x.maxHP]),
+            ... (limitBreakCheck ? [x.limitATK] : [x.maxATK]),
+            ... (limitBreakCheck ? [x.limitHPPVP] : [x.pvpHP]),
+            ... (limitBreakCheck ? [x.limitATKPVP] : [x.pvpATK]),
+            ... (limitBreakCheck ? [x.limitSPD] : [x.pvpSPD]),
             x.number
         ];
         return result;

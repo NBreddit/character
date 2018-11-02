@@ -69,7 +69,7 @@
 
     utils.getThumbnailUrl = function (n) {
         var asset = window.units[n-1].assetID;
-        var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1'); // missing aokiji image
+        var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1');
         return '../img/icon/img_icon_' + id + '.png';
     };
 
@@ -79,7 +79,7 @@
 
     utils.getBigThumbnailUrl = function (n) {
       var asset = window.units[n-1].assetID;
-        var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1'); // missing aokiji image
+        var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1');
         return '../img/full/img_card_' + id + '.png';
     };
 

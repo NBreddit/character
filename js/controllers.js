@@ -126,9 +126,6 @@ app.controller('DetailsCtrl',function($scope, $rootScope, $state, $stateParams, 
         for (var i=0;i<evolvesFrom[from].length;++i)
             $scope.evolvesFrom.push({ from: parseInt(from, 10), to: $scope.id, via: evolvesFrom[from][i] });
     }
-    $scope.usedBy = CharUtils.searchEvolverEvolutions(id);
-    $scope.collapsed = { to: true, from: true, used: true, drops: true, manuals: true, families: true };
-
 
     // events/functions
     $scope.getEvos = CharUtils.getEvolversOfEvolution;

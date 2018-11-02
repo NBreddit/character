@@ -634,6 +634,10 @@ tr.preview td:nth-child(2) > a:after {
     display: inline-block;
 }
 
+.aliases tbody tr td:first-child {
+  white-space: normal;
+}
+
 .abilities td:first-child {
     white-space: nowrap;
 }
@@ -928,10 +932,16 @@ unit > a:hover, .clickable:hover {
 }
 
 .slot.small {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
-    background-size: 40px 40px;
+    background-repeat: no-repeat;
     margin: 1px;
+}
+
+.slot.evo img {
+  display: block;
+  height: 40px;
+  margin: 2px;
 }
 
 /**********
@@ -939,6 +949,11 @@ unit > a:hover, .clickable:hover {
  **********/
 
 @media (min-width: 1024px) {
+    .slot.evo img {
+      display: block;
+      height: 75px;
+      margin: 4px;
+    }
 
     .slot.medium {
         width: 80px;
