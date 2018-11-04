@@ -1,6 +1,6 @@
 window.fieldbuddy = [
   {
-    "counter": "[x] chance of counter-attacking when attacked",
+    "counter": "[x]% chance of counter-attacking when attacked",
     "counter-red": "Lowers enemy's chance to counter by [x]%",
     "dodge": "[x]% chance of dodging an attack",
     "atk": "Boosts ATK by [x]",
