@@ -63,6 +63,30 @@ window.evolutions = {
         evolution: 51,
         evolvers: [ 'brv3','brv3','brv2', 'brv2']
     },
+    52: {
+        evolution: 53,
+        evolvers: [ 'bod2','bod2','bod1', 'bod1']
+    },
+    54: {
+        evolution: 55,
+        evolvers: [ 'wis2','wis2','wis1', 'wis1']
+    },
+    56: {
+        evolution: 57,
+        evolvers: [ 'skl2','skl2','skl1', 'skl1']
+    },
+    58: {
+        evolution: 59,
+        evolvers: [ 'bod2','bod2','bod1', 'bod1']
+    },
+    60: {
+        evolution: 61,
+        evolvers: [ 'hrt2','hrt2','hrt1', 'hrt1']
+    },
+    62: {
+        evolution: 63,
+        evolvers: [ 'brv2','brv2','brv1', 'brv1']
+    },
     601: {
     evolution: 602,
     evolvers: [ 'skl4','skl4','skl4','skl3','skl3' ]

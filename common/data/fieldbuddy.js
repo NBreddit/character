@@ -1,7 +1,7 @@
 window.fieldbuddy = [
   {
     "counter": "[x]% chance of counter-attacking when attacked",
-    "counter-red": "Lowers enemy's chance to counter by [x]%",
+    "counterred": "Lowers enemy's chance to counter by [x]%",
     "dodge": "[x]% chance of dodging an attack",
     "atk": "Boosts ATK by [x]",
     "spd": "Boosts SPD by [x]",
@@ -11,7 +11,7 @@ window.fieldbuddy = [
     "sklatk": "Boosts ATK of [SKL] units by [x]",
     "wisatk": "Boosts ATK of [WIS] units by [x]",
     "crit": "Boosts critical rate by [x]x",
-    "fixed-dmg": "Deals [x] fixed damage",
+    "fixeddmg": "Deals [x] fixed damage",
     "subred": "Lowers enemy's chance of substitution jutsu by [x]%",
     "dmgred": "Reduces damage taken by [x]%",
     "hrtred": "Reduces damage from [HRT] enemies by [x]%",
