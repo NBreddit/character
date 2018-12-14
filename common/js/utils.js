@@ -70,17 +70,17 @@
     utils.getThumbnailUrl = function (n) {
         var asset = window.units[n-1].assetID;
         var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1');
-        return '../img/icon/img_icon_' + id + '.png';
+        return 'img/icon/img_icon_' + id + '.png';
     };
 
     utils.getScroll = function (n) {
-        return '../img/evo/' + n + '.png';
+        return 'img/evo/' + n + '.png';
     };
 
     utils.getBigThumbnailUrl = function (n) {
       var asset = window.units[n-1].assetID;
         var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1');
-        return '../img/full/img_card_' + id + '.png';
+        return 'img/full/img_card_' + id + '.png';
     };
 
     utils.isClickOnOrb = function (e, target) {
