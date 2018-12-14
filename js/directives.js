@@ -34,12 +34,12 @@ directives.characterTable = function($rootScope, $timeout, $compile, $storage) {
                     //types
                     var typeBox = row.cells[3];
                     var type = typeBox.textContent;
-                    $(typeBox).html('<img src="../img/type/' + type + '.png">');
+                    $(typeBox).html('<img src="img/type/' + type + '.png">');
 
                     //stars
                     var starBox = row.cells[2];
                     var rarity = starBox.textContent;
-                    $(starBox).html('<img src="../img/rarity/' + rarity + '.png">');
+                    $(starBox).html('<img src="img/rarity/' + rarity + '.png">');
 
                     //affil
                     var affiBox = row.cells[5];
@@ -47,10 +47,10 @@ directives.characterTable = function($rootScope, $timeout, $compile, $storage) {
 
                     if (affil.indexOf(',') >= 0) {
                       var affiSplit = affil.split(', ');
-                      $(affiBox).html('<div class="doubleAffil"><img src="../img/affi/' + affiSplit[0] + '.png"><img src="../img/affi/' + affiSplit[1] + '.png"></div>');
+                      $(affiBox).html('<div class="doubleAffil"><img src="img/affi/' + affiSplit[0] + '.png"><img src="img/affi/' + affiSplit[1] + '.png"></div>');
                     }
                     else {
-                      $(affiBox).html('<img src="../img/affi/' + affil + '.png">');
+                      $(affiBox).html('<img src="img/affi/' + affil + '.png">');
                     }
 
 					// compile
@@ -351,7 +351,7 @@ directives.addAbilities = function($stateParams, $rootScope) {
 
               if(desc){
 
-                  element.append($('<tr><td><img src="../img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
+                  element.append($('<tr><td><img src="img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
                 }
               }
           }
@@ -384,15 +384,15 @@ directives.addPvpAbilities = function($stateParams, $rootScope) {
                     var PVPvalue= window.details[$stateParams.id]['PVPablD'][y];
                     var PVPfullAbility = PVPdesc.toString().replace('[x]', PVPvalue);
                     var PVPdecorated = PVPfullAbility.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
-                    element.append($('<tr><td><img src="../img/ability/'+ abl + '.png"> ' + PVPdecorated + '</td></tr>'));
+                    element.append($('<tr><td><img src="img/ability/'+ abl + '.png"> ' + PVPdecorated + '</td></tr>'));
                   }
                   //fallback to regular ablity if blank
                   else
-                    element.append($('<tr><td><img src="../img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
+                    element.append($('<tr><td><img src="img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
                 }
                 //fallback to regular ablity if blank
                 else
-                  element.append($('<tr><td><img src="../img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
+                  element.append($('<tr><td><img src="img/ability/'+ abl + '.png"> ' + decorated + '</td></tr>'));
                 }
         }
     }
