@@ -13,6 +13,7 @@ window.abilities = [
     "bodup": "Boosts damage against [BOD] enemies by [x]%",
     "brvred": "Reduces damage from [BRV] enemies by [x]%",
     "brvup": "Boosts damage against [BRV] enemies by [x]%",
+    "chakrafieldnull": "Nullifies Chakra Reduction Field Effect",
     "chakrajutsu0": "[x]% chance to reduce chakra consumed by Normal Jutsu to 0",
     "chakramaprec": "Restores [x] chakra when moving to next map",
     "chakrarec": "[x]% chance to restore 1 chakra when attacked",

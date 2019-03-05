@@ -566,5 +566,49 @@ window.evolutions = {
   702: {
     evolution: 703,
     evolvers: ['sasukebead3','sasukebead3','sasukebead2','sasukebead2','sasukebead2']
-  }
+  },
+  704: {
+    evolution: 705,
+    evolvers: ['skl4','skl4','skl4','skl3','skl3']
+  },
+  705: {
+    evolution: 706,
+    evolvers: ['sklbead1','sklbead1','sklbead','sklbead','sklbead']
+  },
+  707: {
+    evolution: 708,
+    evolvers: ['brv4','brv4','brv4','brv3','brv3']
+  },
+  708: {
+    evolution: 709,
+    evolvers: ['brvbead1','brvbead1','brvbead','brvbead','brvbead']
+  },
+  710: {
+    evolution: 711,
+    evolvers: [ 'hrt4','hrt4','hrt3','hrt3' ]
+  },
+  712: {
+    evolution: 713,
+    evolvers: ['wis4','wis4','wis4','wis3','wis3']
+  },
+  714: {
+    evolution: 715,
+    evolvers: ['skl4','skl4','skl4','skl4','skl4']
+  },
+  716 : {
+    evolution: 717,
+    evolvers: ['bod4','bod4','bod3','bod3']
+  },
+  719 : {
+    evolution: 720,
+    evolvers: ['kisamebead1','kisamebead1','kisamebead1','kisamebead','kisamebead']
+  },
+  721 : {
+    evolution: 722,
+    evolvers: ['bod4','bod4','bod4','bod3','bod3']
+  },
+  722 : {
+    evolution: 723,
+    evolvers: ['bodbead1','bodbead1','bodbead','bodbead','bodbead']
+  },
 };

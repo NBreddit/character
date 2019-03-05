@@ -52,6 +52,7 @@ window.sync = [
     'seal': 'Lowers chance of being jutsu sealed by [x]%',
     'slip': 'Lowers chance of receiving slip damage by [x]%',
     'hpseal': 'Lowers chance of being HP recovery sealed by [x]%',
+    'atkdownnull': 'Nullifies ATK Reduction (Excluding Field Effects and F Skills)',
     'immobnull': 'Nullifies Immobilization (Excluding Field Effects and F Skills)',
     'jutsunull': 'Nullifies Jutsu Sealing (Excluding Field Effects and F Skills)',
     'switchnull': 'Nullifies Switch Sealing (Excluding Field Effects and F Skills)',

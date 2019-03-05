@@ -20,11 +20,12 @@ window.fieldbuddy = [
     "brvred": "Reduces damage from [BRV] enemies by [x]%",
     "wisred": "Reduces damage from [WIS] enemies by [x]%",
     "chakraseal": "Lowers chance of being chakra recovery sealed by [x]%",
-    "immob": "Lowers chance of being immobilized by [x]%",
-    "jutsuseal": "Lowers chance of being jutsu sealed by [x]%",
-    "slip": "Lowers chance of receiving slip damage by [x]%",
-    "switchseal": "Lowers chance of being switch sealed by [x]%",
-    "atkred": "Lowers chance of receiving ATK reduction by [x]%",
+    "immob": "Lowers the chance of being immobilized by [x]%",
+    "hpseal": "Lowers the chance of being HP recovery sealed by [x]%",
+    "jutsuseal": "Lowers the chance of being jutsu sealed by [x]%",
+    "slip": "Lowers the chance of receiving slip damage by [x]%",
+    "switchseal": "Lowers the chance of being switch sealed by [x]%",
+    "atkred": "Lowers the chance of receiving ATK reduction by [x]%",
     "heal": "Restores [x] HP",
   }
 ];
