@@ -1319,9 +1319,9 @@ window.details = {
     abl: ["atk-up", "chakra-jutsu-0", "skl-red", "atk-up", "chakra-ult-0"],
     ablID: [100, 10, 10, 100, 10],
     sync: ['hrt', 'short'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100, 75],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200, 375]
   },
   402: {
@@ -1562,9 +1562,9 @@ window.details = {
     abl: ["hrt-red", "bod-red", "brv-red", "wis-red"],
     ablD: [25, 25, 25, 25],
     sync: ['bod', 'nonbod'],
-    syncD: ['hpheal', 'immob'],
+    syncD: ['heal', 'immob'],
     syncV: [75, 15],
-    PVPsyncD: ['hpheal', ''],
+    PVPsyncD: ['heal', ''],
     PVPsyncV: [375, '']
   },
   418: {
@@ -1581,9 +1581,9 @@ window.details = {
     abl: ["hrt-red", "bod-red", "brv-red", "wis-red", "skl-red"],
     ablD: [25, 25, 25, 25, 25],
     sync: ['bod', 'nonbod', 'leaf'],
-    syncD: ['hpheal', 'immob', 'seal'],
+    syncD: ['heal', 'immob', 'seal'],
     syncV: [75, 15, 15],
-    PVPsyncD: ['hpheal', '', ''],
+    PVPsyncD: ['heal', '', ''],
     PVPsyncV: [375, '', '']
   },
   419: {
@@ -1647,9 +1647,9 @@ window.details = {
     abl: ["brv-red", "brv-red", "brv-red", "brv-red", "brv-red"],
     ablD: [10, 10, 10, 10, 10],
     sync: ['wis', 'leaf'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [50, 50],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [100, 250]
   },
   423: {
@@ -2169,9 +2169,9 @@ window.details = {
     abl: ["immob-red", "seal-red", "immob-red", "seal-red", "immob-red", "seal-red"],
     ablD: [20, 20, 20, 20, 20, 20],
     sync: ['hrt', 'nonshort', 'akatsuki'],
-    syncD: ['slip', 'atk', 'hpheal'],
+    syncD: ['slip', 'atk', 'heal'],
     syncV: [15, 100, 75],
-    PVPsyncD: ['', 'atk', 'hpheal'],
+    PVPsyncD: ['', 'atk', 'heal'],
     PVPsyncV: ['', 200, 375]
   },
   453: {
@@ -2207,9 +2207,9 @@ window.details = {
     PVPabl: ['', 'hp-heal', '', 'hp-heal', ''],
     PVPablD: ['', 200, '', 200, ''],
     sync: ['skl', 'leaf'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100, 75],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200, 375]
   },
   455: {
@@ -2230,9 +2230,9 @@ window.details = {
     PVPabl: ['hp-heal', '', '', 'hp-heal', ''],
     PVPablD: [400, '', '', 400, ''],
     sync: ['skl', 'leaf'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100, 75],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200, 375]
   },
   456: {
@@ -2246,9 +2246,9 @@ window.details = {
     abl: ["skl-red", "immob-red", "skl-red", "immob-red"],
     ablD: [15, 30, 15, 30],
     sync: ['bod'],
-    syncD: ['hpheal'],
+    syncD: ['heal'],
     syncV: [75],
-    PVPsyncD: ['hpheal'],
+    PVPsyncD: ['heal'],
     PVPsyncV: [375]
   },
   457: {
@@ -2264,9 +2264,9 @@ window.details = {
     abl: ["skl-red", "immob-red", "skl-red", "immob-red", "skl-red"],
     ablD: [15, 30, 15, 30, 15],
     sync: ['bod', 'leaf'],
-    syncD: ['hpheal', 'atk'],
+    syncD: ['heal', 'atk'],
     syncV: [75, 100],
-    PVPsyncD: ['hpheal', 'atk'],
+    PVPsyncD: ['heal', 'atk'],
     PVPsyncV: [375, 200]
   },
   458: {
@@ -2285,9 +2285,9 @@ window.details = {
     abl: ["seal-red", "spd-up", "immob-red", "seal-red", "chakra-ult-0"],
     ablD: [30, 30, 30, 30, 20],
     sync: ['bod', 'leaf'],
-    syncD: ['hpheal', 'atk'],
+    syncD: ['heal', 'atk'],
     syncV: [75, 100],
-    PVPsyncD: ['hpheal', 'atk'],
+    PVPsyncD: ['heal', 'atk'],
     PVPsyncV: [375, 200]
   },
   459: {
@@ -2320,9 +2320,9 @@ window.details = {
     PVPabl: ['hp-heal', '', 'hp-heal', ''],
     PVPablD: [200, '', 200, ''],
     sync: ['brv'],
-    syncD: ['hpheal'],
+    syncD: ['heal'],
     syncV: [50],
-    PVPsyncD: ['hpheal'],
+    PVPsyncD: ['heal'],
     PVPsyncV: [250]
   },
   461: {
@@ -2340,9 +2340,9 @@ window.details = {
     PVPabl: ['hp-heal', '', 'hp-heal', '', 'hp-heal'],
     PVPablD: [200, '', 200, '', 200],
     sync: ['brv', 'leaf'],
-    syncD: ['hpheal', 'hpseal'],
+    syncD: ['heal', 'hpseal'],
     syncV: [50, 10],
-    PVPsyncD: ['hpheal', ''],
+    PVPsyncD: ['heal', ''],
     PVPsyncV: [250, '']
   },
   462: {
@@ -2381,9 +2381,9 @@ window.details = {
     PVPabl: ['', 'hp-heal', '', 'hp-heal', ''],
     PVPablD: ['', 300, '', 300, ''],
     sync: ['brv', 'mid'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100, 75],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200, 375]
   },
   464: {
@@ -2629,9 +2629,9 @@ window.details = {
     abl: ["wis-red", "brv-red", "dmg-red", "dmg-red", "chakra-maprec"],
     ablD: [20, 20, 5, 5, 1],
     sync: ['brv', 'sand'],
-    syncD: ['wisred', 'hpheal'],
+    syncD: ['wisred', 'heal'],
     syncV: [20, 75],
-    PVPsyncD: ['', 'hpheal'],
+    PVPsyncD: ['', 'heal'],
     PVPsyncV: ['', 375]
   },
   478: {
@@ -2650,9 +2650,9 @@ window.details = {
     abl: ["immob-red", "wis-red", "immob-red", "wis-red", "immob-red"],
     ablD: [25, 20, 25, 20, 25],
     sync: ['brv', 'sand'],
-    syncD: ['wisred', 'hpheal'],
+    syncD: ['wisred', 'heal'],
     syncV: [20, 75],
-    PVPsyncD: ['', 'hpheal'],
+    PVPsyncD: ['', 'heal'],
     PVPsyncV: ['', 375]
   },
   479: {
@@ -2670,9 +2670,9 @@ window.details = {
     abl: ["dodge", "spd-up", "dodge", "spd-up", "dodge"],
     ablD: [5, 10, 5, 10, 5],
     sync: ['skl', 'akatsuki'],
-    syncD: ['hpheal', 'atkdown'],
+    syncD: ['heal', 'atkdown'],
     syncV: [75, 10],
-    PVPsyncD: ['hpheal', ''],
+    PVPsyncD: ['heal', ''],
     PVPsyncV: [375, '']
   },
   480: {
@@ -2687,9 +2687,9 @@ window.details = {
     abl: ["chakra-jutsu-0", "chakra-jutsu-0", "chakra-jutsu-0", "chakra-jutsu-0"],
     ablD: [10, 10, 10, 10],
     sync: ['hrt', 'leaf'],
-    syncD: ['bodred', 'hpheal'],
+    syncD: ['bodred', 'heal'],
     syncV: [20, 75],
-    PVPsyncD: ['', 'hpheal'],
+    PVPsyncD: ['', 'heal'],
     PVPsyncV: ['', 375]
   },
   481: {
@@ -2706,9 +2706,9 @@ window.details = {
     abl: ["chakra-jutsu-0", "chakra-jutsu-0", "chakra-jutsu-0", "chakra-jutsu-0", "chakra-jutsu-0"],
     ablD: [10, 10, 10, 10, 10],
     sync: ['hrt', 'leaf', 'midlong'],
-    syncD: ['bodred', 'hpheal', 'seal'],
+    syncD: ['bodred', 'heal', 'seal'],
     syncV: [20, 75, 15],
-    PVPsyncD: ['', 'hpheal', ''],
+    PVPsyncD: ['', 'heal', ''],
     PVPsyncV: ['', 375, '']
   },
   482: {
@@ -3071,9 +3071,9 @@ window.details = {
     PVPabl: ['', 'hp-up', 'hp-up', ''],
     PVPablD: ['', 500, 500, ''],
     sync: ['leaf'],
-    syncD: ['hpheal'],
+    syncD: ['heal'],
     syncV: [75],
-    PVPsyncD: ['hpheal'],
+    PVPsyncD: ['heal'],
     PVPsyncV: [375]
   },
   601: {
@@ -3746,7 +3746,7 @@ window.details = {
     PVPabl: ['hp-heal', '', 'hp-heal', ''],
     PVPablD: [500, '', 500, ''],
     sync: ['leaf'],
-    syncD: ['jutsunull'],
+    syncD: ['sealnull'],
     syncV: [''],
   },
   638: {
@@ -3766,7 +3766,7 @@ window.details = {
     PVPabl: ['hp-heal', '', 'hp-heal', '', ''],
     PVPablD: [500, '', 500, '', ''],
     sync: ['leaf','short'],
-    syncD: ['jutsunull','immobnull'],
+    syncD: ['sealnull','immobnull'],
     syncV: ['',''],
   },
   639: {
@@ -3785,7 +3785,7 @@ window.details = {
     abl: ["chakra-jutsu-0", "hrtred", "immob-rate", "dmg-red", "spd-up"],
     ablD: [20,15,10,10,30],
     sync: ['leaf','short'],
-    syncD: ['jutsunull','immobnull'],
+    syncD: ['sealnull','immobnull'],
     syncV: ['',''],
   },
   640: {
@@ -4157,9 +4157,9 @@ window.details = {
     PVPabl: ['', '', '', '', '', 'hp-heal'],
     PVPablD: ['', '', '', '', '', 1000],
     sync: ['leaf','ninja','nonhrt'],
-    syncD: ['jutsunull','atk','hpheal'],
+    syncD: ['sealnull','atk','heal'],
     syncV: ['',200,125],
-    PVPsyncD: ['','atk','hpheal'],
+    PVPsyncD: ['','atk','heal'],
     PVPsyncV: ['',400,625]
   },
   660: {
@@ -4179,9 +4179,9 @@ window.details = {
     PVPabl: ['', '', '', '', 'hp-heal', 'chakra-jutsu-0'],
     PVPablD: ['', '', '', '', 1000, '25'],
     sync: ['leaf','ninja','nonhrt','hrt'],
-    syncD: ['jutsunull','atk','hpheal','bodred'],
+    syncD: ['sealnull','atk','heal','bodred'],
     syncV: ['',200,125,25],
-    PVPsyncD: ['','atk','hpheal',''],
+    PVPsyncD: ['','atk','heal',''],
     PVPsyncV: ['',400,625,'']
   },
   661: {
@@ -4239,9 +4239,9 @@ window.details = {
     PVPabl: ['hp-up', '', 'heal-up', '', ''],
     PVPablD: [1000, '', 2500, '', ''],
     sync: ['wis','long'],
-    syncD: ['hpheal','atk'],
+    syncD: ['heal','atk'],
     syncV: [50,75],
-    PVPsyncD: ['hpheal','atk'],
+    PVPsyncD: ['heal','atk'],
     PVPsyncV: [250,150]
   },
   664: {
@@ -4283,9 +4283,9 @@ window.details = {
     PVPabl: ['', '', '', 'hp-heal', ''],
     PVPablD: ['', '', '', 600, ''],
     sync: ['leaf','ninja'],
-    syncD: ['bodred','hpheal'],
+    syncD: ['bodred','heal'],
     syncV: [15,50],
-    PVPsyncD: ['','hpheal'],
+    PVPsyncD: ['','heal'],
     PVPsyncV: ['',250]
   },
   666: {
@@ -4304,9 +4304,9 @@ window.details = {
     abl: ["seal-red", "chakra-jutsu-0", "seal-red", "chakra-jutsu-0", "seal-red"],
     ablD: [20,15,20,15,20],
     sync: ['leaf','ninja'],
-    syncD: ['bodred','hpheal'],
+    syncD: ['bodred','heal'],
     syncV: [15,50],
-    PVPsyncD: ['','hpheal'],
+    PVPsyncD: ['','heal'],
     PVPsyncV: ['',250]
   },
   667: {
@@ -4559,9 +4559,9 @@ window.details = {
     abl: ["hrt-up", "skl-up", "bod-up", "wis-up", "wisred"],
     ablD: [20,20,20,20,25],
     sync: ['wis','nonwis'],
-    syncD: ['jutsunull','hpheal'],
+    syncD: ['sealnull','heal'],
     syncV: ['',200],
-    PVPsyncD: ['','hpheal'],
+    PVPsyncD: ['','heal'],
     PVPsyncV: ['',1000]
   },
   681: {
@@ -4579,9 +4579,9 @@ window.details = {
     abl: ["hrt-up", "skl-up", "bod-up", "wis-up", "wisred", "brvred"],
     ablD: [20,20,20,20,25,25],
     sync: ['wis','nonwis','uchiha'],
-    syncD: ['jutsunull','hpheal','chakrasealnull'],
+    syncD: ['sealnull','heal','chakrasealnull'],
     syncV: ['',200,''],
-    PVPsyncD: ['','hpheal',''],
+    PVPsyncD: ['','heal',''],
     PVPsyncV: ['',1000,'']
   },
   682: {
@@ -4632,9 +4632,9 @@ window.details = {
     PVPabl: ['', 'hp-heal', '', 'hp-heal', ''],
     PVPablD: ['', 400, '', 400, ''],
     sync: ['bod','leaf'],
-    syncD: ['hpheal','dodge'],
+    syncD: ['heal','dodge'],
     syncV: [75,15],
-    PVPsyncD: ['hpheal',''],
+    PVPsyncD: ['heal',''],
     PVPsyncV: [375,'']
   },
   685: {
@@ -4725,7 +4725,7 @@ window.details = {
     abl: ["hrt-up", "skl-up", "bod-up", "crit", "crit"],
     ablD: [20,20,20,2.5,2.5],
     sync: ['akatsuki','wis'],
-    syncD: ['chakrasealnull','jutsunull'],
+    syncD: ['chakrasealnull','sealnull'],
     syncV: ['','']
   },
   690: {
@@ -4744,7 +4744,7 @@ window.details = {
     abl: ['chakra-jutsu-0', 'effect-jutsu-up', 'atk-up', 'dmg-red', 'chakra-jutsu-0'],
     ablD: [20,1,250,20,20],
     sync: ['akatsuki','wis'],
-    syncD: ['chakrasealnull','jutsunull'],
+    syncD: ['chakrasealnull','sealnull'],
     syncV: ['','']
   },
   691: {
@@ -4778,7 +4778,7 @@ window.details = {
     abl: ["effect-rate", "chakra-jutsu-0", "dodge", "chakra-jutsu-0", "dodge"],
     ablD: [10, 15, 10, 15, 10],
     sync: ['leaf','brv'],
-    syncD: ['hpheal','wisred'],
+    syncD: ['heal','wisred'],
     syncV: [75, 15]
   },
   693: {
@@ -4885,7 +4885,7 @@ window.details = {
     PVPabl: ['hp-heal','','hp-heal','','hp-heal'],
     PVPablD: [500,'',500,'',500],
     sync: ['senju','brv','nonbrv'],
-    syncD: ['jutsunull','atk','chakrasealnull'],
+    syncD: ['sealnull','atk','chakrasealnull'],
     syncV: ['',100,''],
     PVPsyncD: ['','atk',''],
     PVPsyncV: ['',200,'']
@@ -4902,7 +4902,7 @@ window.details = {
     abl: ['knock-null', 'dodge', 'chakra-jutsu-0', 'chakra-ult-0', 'dodge'],
     ablD: ['',20,20,20,20,20],
     sync: ['short', 'akatsuki', 'uchiha'],
-    syncD: ['atk', 'jutsunull', 'chakrasealnull'],
+    syncD: ['atk', 'sealnull', 'chakrasealnull'],
     syncV: [150,'',''],
     PVPsyncD: ['atk', '', ''],
     PVPsyncV: [300,'','']
@@ -4922,7 +4922,7 @@ window.details = {
     abl: ['knock-null', 'dodge', 'chakra-jutsu-0', 'chakra-ult-0', 'dodge', 'chakra-ult-0'],
     ablD: ['',20,20,20,20,20,20],
     sync: ['short', 'akatsuki', 'uchiha'],
-    syncD: ['atk', 'jutsunull', 'chakrasealnull'],
+    syncD: ['atk', 'sealnull', 'chakrasealnull'],
     syncV: [150,'',''],
     PVPsyncD: ['atk', '', ''],
     PVPsyncV: [300,'','']
@@ -4941,9 +4941,9 @@ window.details = {
     abl: ['wisred', 'immob-red', 'wisred', 'immob-red', 'immob-red'],
     ablD: [20,20,20,20,20],
     sync: ['hrt', 'mid'],
-    syncD: ['hpheal', 'immob'],
+    syncD: ['heal', 'immob'],
     syncV: [75,15],
-    PVPsyncD: ['hpheal', ''],
+    PVPsyncD: ['heal', ''],
     PVPsyncV: [375,'']
   },
   702: {
@@ -5014,7 +5014,7 @@ window.details = {
     abl: ['chakrajutsu0', 'hrtred', 'typenull', 'hrtred', 'sealrate'],
     ablD: [20,20,'',20,20],
     sync: ['skl', 'leaf'],
-    syncD: ['atk', 'jutsunull'],
+    syncD: ['atk', 'sealnull'],
     syncV: [150,''],
     PVPsync: ['skl', ''],
     PVPsyncD: ['atk', ''],
@@ -5035,7 +5035,7 @@ window.details = {
     abl: ['bodup', 'sklup', 'chakrared', 'wisup', 'brvup'],
     ablD: [30,30,1,30,30],
     sync: ['skl', 'leaf'],
-    syncD: ['atk', 'jutsunull'],
+    syncD: ['atk', 'sealnull'],
     syncV: [150,''],
     PVPsync: ['skl', ''],
     PVPsyncD: ['atk', ''],
@@ -5113,9 +5113,9 @@ window.details = {
     abl: ['dodge', 'crit', 'dodge', 'crit'],
     ablD: [10,3,10,3],
     sync: ['hrt'],
-    syncD: ['hpheal'],
+    syncD: ['heal'],
     syncV: [50],
-    PVPsyncD: ['hpheal'],
+    PVPsyncD: ['heal'],
     PVPsyncV: [250]
   },
   711: {
@@ -5132,9 +5132,9 @@ window.details = {
     abl: ['dodge', 'crit', 'dodge', 'crit', 'dodge'],
     ablD: [10,2,10,2,20],
     sync: ['hrt','uchiha'],
-    syncD: ['hpheal','dmgred'],
+    syncD: ['heal','dmgred'],
     syncV: [50,20],
-    PVPsyncD: ['hpheal',''],
+    PVPsyncD: ['heal',''],
     PVPsyncV: [250,'']
   },
   712: {
@@ -5150,9 +5150,9 @@ window.details = {
     PVPabl: ['heal', 'hp', 'heal', 'hp'],
     PVPablD: [400,400,400,400],
     sync: ['leaf'],
-    syncD: ['hpheal'],
+    syncD: ['heal'],
     syncV: [50],
-    PVPsyncD: ['hpheal'],
+    PVPsyncD: ['heal'],
     PVPsyncV: [250]
   },
   713: {
@@ -5171,9 +5171,9 @@ window.details = {
     PVPabl: ['heal', 'hp', 'heal', 'hp'],
     PVPablD: [400,400,400,400],
     sync: ['leaf', 'ninja'],
-    syncD: ['hpheal', 'hpheal'],
+    syncD: ['heal', 'heal'],
     syncV: [50,50],
-    PVPsyncD: ['hpheal', 'hpheal'],
+    PVPsyncD: ['heal', 'heal'],
     PVPsyncV: [250,250]
   },
   714: {
@@ -5276,14 +5276,14 @@ window.details = {
     ultHit: 6,
     PVPjutsu: "3.5x ATK in BOD damage to 1 enemy, 60% chance of ATK reduction for 4 turns, restores own chakra gauge by 1.",
     PVPult: "6.5x ATK in BOD damage to all enemies in range, 80% chance of ATK reduction for 6 turns.",
-    abl: ['dodge', 'hpheal', 'dmgred', 'hpheal', 'chakrault0'],
+    abl: ['dodge', 'heal', 'dmgred', 'heal', 'chakrault0'],
     ablD: [10,200,10,200,15],
-    PVPabl: ['', 'hpheal', '', 'hpheal', ''],
+    PVPabl: ['', 'heal', '', 'heal', ''],
     PVPablD: ['',400,'',400,''],
     sync: ['bod', 'akatsuki'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100,50],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200,250]
   },
   720: {
@@ -5298,14 +5298,14 @@ window.details = {
     ultHit: 6,
     PVPjutsu: "5x ATK in BOD damage to 1 enemy, 45% chance of switch sealing for 2 turns, reduces their chakra by 1 and knocks them back.",
     PVPult: "12x ATK in BOD damage to all enemies in range, 50% chance of SPD reduction for 2 seconds and reduces their chakra by 1.",
-    abl: ['switchsealred', 'hpheal', 'switchsealred', 'hpheal', 'chakrault0'],
+    abl: ['switchsealred', 'heal', 'switchsealred', 'heal', 'chakrault0'],
     ablD: [20,200,20,200,15],
-    PVPabl: ['', 'hpheal', '', 'hpheal', ''],
+    PVPabl: ['', 'heal', '', 'heal', ''],
     PVPablD: ['',400,'',400,''],
     sync: ['bod', 'akatsuki'],
-    syncD: ['atk', 'hpheal'],
+    syncD: ['atk', 'heal'],
     syncV: [100,50],
-    PVPsyncD: ['atk', 'hpheal'],
+    PVPsyncD: ['atk', 'heal'],
     PVPsyncV: [200,250]
   },
   721: {
@@ -5358,6 +5358,190 @@ window.details = {
     sync: ['uchiha','long'],
     syncD: ['multi','chakrasealnull'],
     syncV: [1,''],
+  },
+  724: {
+    obtain: 'Blazing Bash',
+    field: ['switchseal', '25% - 30'],
+    buddy: ['dodge', 20],
+    hit: 1,
+    jutsu: "4.5x ATK in HRT damage to 1 enemy, 40% chance of HP recovery sealing for 5 turns, 30% chance of ATK reduction for 4 turns, 20% chance of jutsu sealing for 2 turns",
+    jutsuName: "Crow Clone Jutsu",
+    jutsuHit: 8,
+    PVPjutsu: "4x ATK in HRT damage to 1 enemy, 40% chance of HP recovery sealing for 5 turns, 30% chance of ATK reduction for 4 turns",
+    abl: ['dodgeignore', 'effectrate', 'substitutionignore', 'sklup'],
+    ablD: ['',10,'',20],
+    sync: ['uchiha'],
+    syncD: ['heal'],
+    syncV: [100],
+    PVPsyncD: ['heal'],
+    PVPsyncV: [500]
+  },
+  725: {
+    field: ['switchseal', '30% - 35'],
+    buddy: ['dodge', 25],
+    hit: 1,
+    jutsu: "5.4x ATK in HRT damage to 1 enemy, 50% chance of HP recovery sealing for 5 turns, 40% chance of ATK reduction for 4 turns, 30% chance of jutsu sealing for 2 turns",
+    jutsuName: "Crow Clone Jutsu",
+    jutsuHit: 8,
+    ult: "15.5x ATK in HRT damage to 1 enemy, 80% chance of HP recovery sealing for 7 turns, 60% chance of ATK reduction for 4 turns and/or immobilization for 3 turns",
+    ultName: "Tsukuyomi",
+    ultHit: 14,
+    PVPjutsu: "4.5x ATK in HRT damage to 1 enemy, 50% chance of HP recovery sealing for 5 turns, 40% chance of ATK reduction for 4 turns",
+    PVPult: "12x ATK in HRT damage to 1 enemy, 80% chance of HP recovery sealing for 7 turns, 70% chance of ATK reduction for 4 turns",
+    abl: ['dodgeignore', 'effectrate', 'substitutionignore', 'sklup', 'dodge'],
+    ablD: ['',10,'',20,20],
+    sync: ['uchiha', 'akatsuki'],
+    syncD: ['heal', 'sealnull'],
+    syncV: [100,''],
+    PVPsyncD: ['heal',''],
+    PVPsyncV: [500,'']
+  },
+  726: {
+    field: ['switchseal', '30% - 35'],
+    buddy: ['dodge', 25],
+    hit: 1,
+    jutsu: "3x ATK in HRT damage to all enemies in range, leaves a black flame region that deals 1000 fixed damage every turn for 3 turns",
+    jutsuName: "Amaterasu",
+    jutsuHit: 8,
+    ult: "10x ATK in HRT damage to 1 enemy",
+    ultName: "Tsukuyomi",
+    ultHit: 14,
+    PVPjutsu: "3.5x ATK in HRT damage to all enemies in range, ignores their substitution and damage reduction effects.",
+    PVPult: "11x ATK in HRT damage to 1 enemy, 80% chance of SPD down for 6 seconds and reduces their chakra by 2.",
+    abl: ['switchsealred', 'dodge', 'knocknull', 'switchsealred', 'dodge'],
+    ablD: [30,15,'',30,20],
+    sync: ['uchiha', 'akatsuki'],
+    syncD: ['heal', 'sealnull'],
+    syncV: [100,''],
+    PVPsyncD: ['heal',''],
+    PVPsyncV: [500,'']
+  },
+  727: {
+    obtain: 'PvP Shop',
+    field: ['jutsuseal', '20% - 25'],
+    buddy: ['jutsuseal', 25],
+    hit: 1,
+    jutsu: "7x ATK in WIS damage to 1 enemy, 40% chance of jutsu sealing for 2 turns",
+    jutsuName: "Soul-Sucking Jutsu",
+    jutsuHit: 7,
+    PVPjutsu: "6.5x ATK in WIS damage to 1 enemy, 40% chance of jutsu sealing for 2 seconds",
+    abl: ['chakrarec', 'heal', 'heal', 'heal'],
+    ablD: [5,150,150,150],
+    PVPabl: ['', 'heal', 'heal', 'heal'],
+    PVPablD: ['',300,300,300],
+    sync: ['akatsuki'],
+    syncD: ['seal'],
+    syncV: [15],
+  },
+  728: {
+    field: ['jutsuseal', '25% - 30'],
+    buddy: ['jutsuseal', 30],
+    hit: 1,
+    jutsu: "7.7x ATK in WIS damage to 1 enemy, 50% chance of jutsu sealing for 2 turns",
+    jutsuName: "Soul-Sucking Jutsu",
+    jutsuHit: 7,
+    ult: "17.3x ATK in WIS damage to 1 enemy, 80% chance of jutsu sealing for 4 turns and knocks them back",
+    ultName: "Ningendo: Trials of Pain",
+    ultHit: 13,
+    PVPjutsu: "7x ATK in WIS damage to 1 enemy, 50% chance of jutsu sealing for 2 seconds",
+    PVPult: "17x ATK in WIS damage to 1 enemy, 80% chance of jutsu sealing for 4 seconds and knocks them back",
+    abl: ['chakrarec', 'heal', 'heal', 'heal', 'sealrate'],
+    ablD: [5,150,150,150,10],
+    PVPabl: ['', 'heal', 'heal', 'heal',''],
+    PVPablD: ['',300,300,300,''],
+    sync: ['akatsuki', 'wis'],
+    syncD: ['seal', 'seal'],
+    syncV: [15,15],
+  },
+  729: {
+    obtain: 'Summon Banner',
+    field: ['bodred', '25% - 30'],
+    buddy: ['bodred', 25],
+    hit: 1,
+    jutsu: "3.6x ATK in BOD damage to all enemies in range, 40% chance of HP recovery sealing for 6 turns and knocks them back",
+    jutsuName: "Sand Tsunami",
+    jutsuHit: 5,
+    PVPjutsu: "3.6x ATK in BOD damage to all enemies in range, 40% chance of HP recovery sealing for 4 turns and knocks them back",
+    abl: ['dmgred', 'sealrate', 'dmgred', 'typenull'],
+    ablD: [10,20,10,''],
+    sync: ['sand'],
+    syncD: ['sealnull'],
+    syncV: [''],
+  },
+  730: {
+    field: ['bodred', '30% - 35'],
+    buddy: ['bodred', 30],
+    hit: 1,
+    jutsu: "4.2x ATK in BOD damage to all enemies in range, 50% chance of HP recovery sealing for 6 turns and knocks them back",
+    jutsuName: "Sand Tsunami",
+    jutsuHit: 5,
+    ult: "11x ATK in BOD damage to 1 enemy, 70% chance of ATK reduction for 8 turns and/or jutsu sealing for 4 turns",
+    ultName: "Sand Prison",
+    ultHit: 13,
+    PVPjutsu: "4.2x ATK in BOD damage to all enemies in range, 50% chance of HP recovery sealing for 4 turns and knocks them back",
+    PVPult: "11x ATK in BOD damage to 1 enemy, 70% chance of ATK reduction for 6 turns and/or jutsu sealing for 3 seconds",
+    abl: ['dmgred', 'sealrate', 'dmgred', 'typenull', 'dmgred'],
+    ablD: [10,20,10,'',15],
+    sync: ['sand', 'bod'],
+    syncD: ['sealnull', 'atk'],
+    syncV: ['',125],
+    PVPsyncD: ['', 'atk'],
+    PVPsyncV: ['',250],
+  },
+  731: {
+    obtain: 'Summon Banner',
+    field: ['chakraseal', '20% - 25'],
+    buddy: ['sklatk', 250],
+    hit: 1,
+    jutsu: "4x ATK in SKL damage to 1 enemy, 60% chance of jutsu sealing for 2 turns and knocks them back",
+    jutsuName: "Detonating Clay: Bird",
+    jutsuHit: 9,
+    PVPjutsu: "3.8x ATK in SKL damage to 1 enemy, 60% chance of jutsu sealing for 2 seconds and knocks them back",
+    abl: ['dodgeignore', 'dodge', 'sealrate', 'dodge'],
+    ablD: ['',15,20,15],
+    sync: ['akatsuki'],
+    syncD: ['immobnull'],
+    syncV: [''],
+  },
+  732: {
+    field: ['chakraseal', '25% - 30'],
+    buddy: ['sklatk', 300],
+    hit: 1,
+    jutsu: "4.5x ATK in SKL damage to 1 enemy, 70% chance of jutsu sealing for 2 turns and knocks them back",
+    jutsuName: "Detonating Clay: Bird",
+    jutsuHit: 9,
+    ult: "9x ATK in SKL damage to all enemies in range, 50% chance of jutsu sealing for 3 turns and knocks them back",
+    ultName: "C3",
+    ultHit: 5,
+    PVPjutsu: "4.3x ATK in SKL damage to 1 enemy, 70% chance of jutsu sealing for 2 seconds and knocks them back",
+    PVPult: "9x ATK in SKL damage to all enemies in range, 50% chance of jutsu sealing for 2 seconds and knocks them back",
+    abl: ['dodgeignore', 'dodge', 'sealrate', 'dodge', 'missionchakra'],
+    ablD: ['',15,20,15,3],
+    sync: ['akatsuki','mid'],
+    syncD: ['immobnull','atk'],
+    syncV: ['',125],
+    PVPsyncD: ['', 'atk'],
+    PVPsyncV: ['',250]
+  },
+  733: {
+    obtain: 'Phantom Castle',
+    field: ['wisred', '20% - 25'],
+    buddy: ['brvatk', 300],
+    hit: 1,
+    jutsu: "3.6x ATK in BRV damage to 1 enemy and knocks them back. Restores 750 HP.",
+    jutsuName: "8 Trigrams Palm Void",
+    jutsuHit: 10,
+    ult: "7.5x ATK in BRV damage to 1 enemy and knocks them back. Restores own chakra by 2.",
+    ultName: "8 Trigrams Serene Enlightenment",
+    ultHit: 14,
+    PVPjutsu: "3.6x ATK in BRV damage to 1 enemy and knocks them back. Restores 3750 HP.",
+    abl: ['atk', 'wisred', 'atk', 'wisred', 'substitutionignore'],
+    ablD: [100,20,100,20,''],
+    sync: ['brv', 'long'],
+    syncD: ['wisred', 'atk'],
+    syncV: [10,100],
+    PVPsyncD: ['', 'atk'],
+    PVPsyncV: ['',200]
   },
 };
 /*

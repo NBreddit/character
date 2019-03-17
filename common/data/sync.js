@@ -39,7 +39,7 @@ window.sync = [
     'sub': 'Ignores Substitution when attacking',
     'crit': 'Boosts critical rate by [x]x',
     'dmgred': 'Reduces damage taken by [x]%',
-    'hpheal': 'Restores [x] HP every turn',
+    'heal': 'Restores [x] HP every turn',
     'dodge': '[x]% chance of dodging an attack (Not Slip Damage)',
     'hrtred': 'Reduces damage from [HRT] enemies by [x]%',
     'sklred': 'Reduces damage from [SKL] enemies by [x]%',
@@ -54,7 +54,7 @@ window.sync = [
     'hpseal': 'Lowers chance of being HP recovery sealed by [x]%',
     'atkdownnull': 'Nullifies ATK Reduction (Excluding Field Effects and F Skills)',
     'immobnull': 'Nullifies Immobilization (Excluding Field Effects and F Skills)',
-    'jutsunull': 'Nullifies Jutsu Sealing (Excluding Field Effects and F Skills)',
+    'sealnull': 'Nullifies Jutsu Sealing (Excluding Field Effects and F Skills)',
     'switchnull': 'Nullifies Switch Sealing (Excluding Field Effects and F Skills)',
     'chakrasealnull': 'Nullifies Chakra Recovery Sealing (Excluding Field Effects and F Skills)'
   }

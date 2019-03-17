@@ -611,4 +611,24 @@ window.evolutions = {
     evolution: 723,
     evolvers: ['bodbead1','bodbead1','bodbead','bodbead','bodbead']
   },
+  724: {
+    evolution: 725,
+    evolvers: [ 'hrt4','hrt4','hrt4','hrt3','hrt3' ]
+  },
+  725: {
+    evolution: 726,
+    evolvers: [ 'hrtbead1','hrtbead1','hrtbead','hrtbead','hrtbead' ]
+  },
+  727: {
+    evolution: 728,
+    evolvers: ['wis4','wis4','wis4','wis3']
+  },
+  729 : {
+    evolution: 730,
+    evolvers: ['bod3','bod3','bod2','bod2']
+  },
+  731 : {
+    evolution: 732,
+    evolvers: ['skl3', 'skl3', 'skl2', 'skl2']
+  }
 };
