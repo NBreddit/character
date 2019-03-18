@@ -19,7 +19,7 @@ window.fieldbuddy = [
     "bodred": "Reduces damage from [BOD] enemies by [x]%",
     "brvred": "Reduces damage from [BRV] enemies by [x]%",
     "wisred": "Reduces damage from [WIS] enemies by [x]%",
-    "chakraseal": "Lowers chance of being chakra recovery sealed by [x]%",
+    "chakraseal": "Lowers the chance of being chakra recovery sealed by [x]%",
     "immob": "Lowers the chance of being immobilized by [x]%",
     "hpseal": "Lowers the chance of being HP recovery sealed by [x]%",
     "jutsuseal": "Lowers the chance of being jutsu sealed by [x]%",

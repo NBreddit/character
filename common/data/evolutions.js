@@ -630,5 +630,21 @@ window.evolutions = {
   731 : {
     evolution: 732,
     evolvers: ['skl3', 'skl3', 'skl2', 'skl2']
-  }
+  },
+  734: {
+    evolution: 735,
+    evolvers: ['brv4','brv4','brv4','brv4','brv4']
+  },
+  736: {
+    evolution: 737,
+    evolvers: ['obitobead1','obitobead1','obitobead1','obitobead','obitobead']
+  },
+  739: {
+    evolution: 740,
+    evolvers: ['wis4','wis4','wis4','wis4', 'wis4']
+  },
+  740 : {
+    evolution: 741,
+    evolvers: ['wisbead1','wisbead1','wisbead','wisbead','wisbead']
+  },
 };
