@@ -739,6 +739,10 @@ window.units = [[ 263, "Naruto Uzumaki, The Worst Loser", "hrt", "leaf", 3, 4, "
     [ 786, "Minato Namikaze, Dazzling Bravery", "wis", "leaf", 5, 28, "Long", 4, 70, 1370, 1166, 24660, 1632, 250],
     [ 787, "Minato Namikaze, Dazzling Bravery", "wis", "leaf", 6, 56, "Long", 3, 100, 1750, 1492, 31500, 2089, 313],
     [ 788, "Minato Namikaze, Dazzling Bravery", "wis", "leaf", 61, 56, "Long", 3, 100, 1460, 1244, 37960, 2239, 353],
+    [ 782, "Itachi Uchiha, Truth Behind the Tragedy", "bod", ["leaf", "uchiha"], 6, 60, "Short", 5, 100, 1548, 2234, 32508, 4468, 152],
+    [ 794, "Sasuke Uchiha, A New Ideal", "wis", ["leaf", "uchiha"], 6, 60, "Mid", 5, 100, 1456, 1576, 29120, 2679, 184],
+    [ 793, "Naruto Uzumaki, Happy New Year", "brv", "leaf", 6, 40, "Vast", 5, 100, 2019, 522, 22019, 1219, 339],
+    [ 789, "Hashirama Senju, Among the Strongest", "wis", ["leaf", "ninja", "senju"], 5, 80, "Short", 5, 70, 2384, 1588, 42912, 2541, 175],
 ];
 // [ assetID, "Name", "Type", "affil1", rarity, cost, "range", chakra, maxlv, hp, atk, pvphp, pvpatk, pvpspd, lbhp, lbatk, pvplbhp, pvplbatk, pvplbspd],
 // [ assetID, "Name", "Type", ["affil1", "affil2"], rarity, cost, "range", chakra, maxlv, hp, atk, pvphp, pvpatk, pvpspd, lbhp, lbatk, pvplbhp, pvplbatk, pvplbspd],

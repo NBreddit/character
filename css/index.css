@@ -126,7 +126,7 @@ input[type="text"] {
 .G       { background: orange; }
 .EMPTY   { background: #777; }
 
-.doubleAffil {display:flex;}
+.doubleAffil {display:inline-flex;}
 
 .badge-japan, .badge-global {
     float: left;

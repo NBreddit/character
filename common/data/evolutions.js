@@ -647,4 +647,8 @@ window.evolutions = {
     evolution: 741,
     evolvers: ['wisbead1','wisbead1','wisbead','wisbead','wisbead']
   },
+  745: {
+    evolution: 746,
+    evolvers: ['wis4','wis4','wis4','wis4', 'wis4']
+  },
 };

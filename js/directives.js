@@ -44,9 +44,12 @@ directives.characterTable = function($rootScope, $timeout, $compile, $storage) {
                     //affil
                     var affiBox = row.cells[5];
                     var affil = affiBox.textContent;
+                    var affiSplit = affil.split(', ');
 
-                    if (affil.indexOf(',') >= 0) {
-                      var affiSplit = affil.split(', ');
+                    if (affiSplit.length == 3) {
+                      $(affiBox).html('<div class="doubleAffil"><img src="img/affi/' + affiSplit[0] + '.png"><img src="img/affi/' + affiSplit[1] + '.png"><img src="img/affi/' + affiSplit[2] + '.png"></div>');
+                    }
+                    else if (affil.indexOf(',') >= 0) {
                       $(affiBox).html('<div class="doubleAffil"><img src="img/affi/' + affiSplit[0] + '.png"><img src="img/affi/' + affiSplit[1] + '.png"></div>');
                     }
                     else {

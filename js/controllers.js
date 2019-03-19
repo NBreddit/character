@@ -114,6 +114,7 @@ app.controller('DetailsCtrl',function($scope, $rootScope, $state, $stateParams, 
     $scope.id = id;
     $scope.unit = jQuery.extend({},window.units[id - 1]);
     $scope.hybrid = $scope.unit.affil && $scope.unit.affil.constructor == Array;
+    $scope.hybrid2 = $scope.hybrid && $scope.unit.affil.length == 3;
     $scope.limitbreak = $scope.unit.limitHP;
     $scope.details = window.details[id];
     $scope.evolution = window.evolutions[id];

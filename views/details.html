@@ -38,6 +38,7 @@
                                     <th ng-if="!hybrid">Affiliation</th>
                                     <th ng-if="hybrid">Affiliation 1</th>
                                     <th ng-if="hybrid">Affiliation 2</th>
+                                    <th ng-if="hybrid2">Affiliation 3</th>
                                     <th>Type</th>
                                     <th>Rarity</th>
                                     <th>Base Cost</th>
@@ -46,6 +47,7 @@
                                     <td ng-if="!hybrid"><img src="img/affi/{{unit.affil}}.png" title="{{unit.affil}}"></td>
                                     <td ng-if="hybrid"><img src="img/affi/{{unit.affil[0]}}.png" title="{{unit.affil[0]}}"></td>
                                     <td ng-if="hybrid"><img src="img/affi/{{unit.affil[1]}}.png" title="{{unit.affil[1]}}"></td>
+                                    <td ng-if="hybrid2"><img src="img/affi/{{unit.affil[2]}}.png" title="{{unit.affil[2]}}"></td>
                                     <td><img src="img/type/{{unit.type}}.png" title="{{unit.type}}"></td>
                                     <td><img src="img/rarity/{{unit.stars}}.png" title="{{unit.type}}"></td>
                                     <td>{{unit.cost}}</td>
@@ -54,7 +56,7 @@
                                     <th>Range</th>
                                     <th>Chakra</th>
                                     <th>Max Level</th>
-                                    <th colspan="{{hybrid ? 2 : 1}}">Normal Hit Count</th>
+                                    <th colspan="{{hybrid ? 3 : 1}}">Normal Hit Count</th>
                                     <!--<th colspan="{{hybrid ? 2 : 1}}">EXP to Max</th>-->
                                 </tr>
                                 <tr>
