@@ -56,6 +56,7 @@ window.sync = [
     'immobnull': 'Nullifies Immobilization (Excluding Field Effects and F Skills)',
     'sealnull': 'Nullifies Jutsu Sealing (Excluding Field Effects and F Skills)',
     'switchnull': 'Nullifies Switch Sealing (Excluding Field Effects and F Skills)',
-    'chakrasealnull': 'Nullifies Chakra Recovery Sealing (Excluding Field Effects and F Skills)'
+    'chakrasealnull': 'Nullifies Chakra Recovery Sealing (Excluding Field Effects and F Skills)',
+    'hpsealnull': 'Nullifies HP Recovery Sealing (Excluding Field Effects and F Skills)'
   }
 ]

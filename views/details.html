@@ -41,7 +41,7 @@
                                     <th ng-if="hybrid2">Affiliation 3</th>
                                     <th>Type</th>
                                     <th>Rarity</th>
-                                    <th>Base Cost</th>
+                                    <th ng-if="!hybrid2">Base Cost</th>
                                 </tr>
                                 <tr>
                                     <td ng-if="!hybrid"><img src="img/affi/{{unit.affil}}.png" title="{{unit.affil}}"></td>
@@ -50,9 +50,10 @@
                                     <td ng-if="hybrid2"><img src="img/affi/{{unit.affil[2]}}.png" title="{{unit.affil[2]}}"></td>
                                     <td><img src="img/type/{{unit.type}}.png" title="{{unit.type}}"></td>
                                     <td><img src="img/rarity/{{unit.stars}}.png" title="{{unit.type}}"></td>
-                                    <td>{{unit.cost}}</td>
+                                    <td ng-if="!hybrid2">{{unit.cost}}</td>
                                 </tr>
                                 <tr>
+                                    <th ng-if="hybrid2">Base Cost</th>
                                     <th>Range</th>
                                     <th>Chakra</th>
                                     <th>Max Level</th>
@@ -60,6 +61,7 @@
                                     <!--<th colspan="{{hybrid ? 2 : 1}}">EXP to Max</th>-->
                                 </tr>
                                 <tr>
+                                    <td ng-if="hybrid2">{{unit.cost}}</td>
                                     <td>{{unit.range}}</td>
                                     <td ng-if="unit.stars == 6 || unit.stars == 61">{{unit.chakra}}/{{unit.chakra*2}}</td>
                                     <td ng-if="unit.stars != 6 && unit.stars != 61">{{unit.chakra}}</td>
