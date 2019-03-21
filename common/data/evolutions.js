@@ -767,4 +767,40 @@ window.evolutions = {
     evolution: 757,
     evolvers: ['hrt4','hrt4','hrt3','hrt3']
   },
+  758: {
+    evolution: 759,
+    evolvers: ['bod4','bod4','bod3','bod3']
+  },
+  760: {
+    evolution: 761,
+    evolvers: ['hrt4','hrt4','hrt4','hrt4', 'hrt4']
+  },
+  762: {
+    evolution: 763,
+    evolvers: ['tobiramabead1','tobiramabead1','tobiramabead1','tobiramabead', 'tobiramabead']
+  },
+  765: {
+    evolution: 766,
+    evolvers: ['brv4','brv4','brv3','brv3']
+  },
+  767: {
+    evolution: 768,
+    evolvers: ['skl4','skl4','skl4','skl3', 'skl3']
+  },
+  768: {
+    evolution: 769,
+    evolvers: ['sklbead1','sklbead1','sklbead','sklbead', 'sklbead']
+  },
+  770: {
+    evolution: 771,
+    evolvers: ['brv4','brv4','brv4','brv3','brv3']
+  },
+  771: {
+    evolution: 772,
+    evolvers: ['brvbead1','brvbead1','brvbead','brvbead', 'brvbead']
+  },
+  773: {
+    evolution: 774,
+    evolvers: ['bod4','bod4','bod4','bod3']
+  },
 };

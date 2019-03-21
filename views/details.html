@@ -123,7 +123,7 @@
                                                 <div ng-bind-html="details.jutsu | decorate"></div>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr ng-if="details.ultName">
                                             <td>Ultimate Jutsu<div ng-if="details.ultHit">{{details.ultHit}} Hit Count</div></td>
                                             <td>
                                                 <strong class="ultName" ng-if="details.ultName">{{details.ultName}}</strong>
@@ -216,7 +216,7 @@
                                               <div ng-if="!details.PVPjutsu" ng-bind-html="details.jutsu | decorate"></div>
                                           </td>
                                       </tr>
-                                      <tr>
+                                      <tr ng-if="details.ultName">
                                           <td>Ultimate Jutsu<div ng-if="details.ultHit">{{details.ultHit}} Hit Count</div></td>
                                           <td>
                                               <strong class="PVPultName" ng-if="details.PVPultName">{{details.PVPultName}}</strong>
