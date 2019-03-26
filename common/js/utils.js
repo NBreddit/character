@@ -77,6 +77,10 @@
         return 'img/evo/' + n + '.png';
     };
 
+    utils.getLBcrystal = function (n) {
+        return 'img/lb.png';
+    };
+
     utils.getBigThumbnailUrl = function (n) {
       var asset = window.units[n-1].assetID;
         var id = ('0000' + asset).slice(-5).replace(/(057[54])/, '0$1');
@@ -109,21 +113,6 @@
         return result.filter(function (r) {
             return r.length > 0;
         });
-    };
-
-    utils.getOppositeType = function (type) {
-        if (!type)
-            return null;
-        type = type.toUpperCase();
-        if (type == 'STR')
-            return 'QCK';
-        if (type == 'QCK')
-            return 'DEX';
-        if (type == 'DEX')
-            return 'STR';
-        if (type == 'PSY')
-            return 'INT';
-        return 'PSY';
     };
 
     /* * * * * Searching/filtering * * * * */
@@ -186,14 +175,6 @@
         else
             result.query = null;
         return result;
-    };
-
-    utils.isFodder = function (unit) {
-        return (unit.stars < 2 && !utils.isEvolverBooster(unit)) || FODDER_REGEX.test(unit.name);
-    };
-
-    utils.isEvolverBooster = function (unit) {
-        return /Evolver|Booster/i.test(unit.class);
     };
 
     utils.searchBaseForms = function (id) {

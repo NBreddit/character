@@ -11,17 +11,19 @@ angular.module('unb') .run(function($rootScope, $timeout, $storage, MATCHER_IDS)
     var padding = Math.floor(Math.log(window.units.length+2) / Math.log(10)) + 1;
     var table = null;
 
-    var addImage = function(data, type, row, meta) {
-        return '<img class="slot small" data-original="' + Utils.getThumbnailUrl(row[0]) + '"> ' +
-            '<a ui-sref="main.search.view({ id: ' + parseInt(row[0],10) + '})">' + data + '</a>';
-    };
-
     var fuse = new Fuse(window.units, {
         keys: [ 'name' ],
         id: 'number',
         threshold: 0.3,
         distance: 200
     });
+
+    var addImage = function(data, type, row, meta) {
+        return '<img class="slot small" data-original="' + Utils.getThumbnailUrl(row[0]) + '"> ' +
+            '<a ui-sref="main.search.view({ id: ' + parseInt(row[0],10) + '})">' + data + '</a>';
+    };
+
+
 
     var fused = null;
 
@@ -236,7 +238,7 @@ angular.module('unb') .run(function($rootScope, $timeout, $storage, MATCHER_IDS)
 
         var result = [
             ('000' + (x.number+1)).slice(-padding),
-            x.name,
+            x.name + (limitBreakCheck ? '<span class="lbcryst" title="Limit-Break Available"></span> ' : ''),
             x.stars,
             x.type,
 
