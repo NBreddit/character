@@ -50,6 +50,7 @@ window.sync = [
     'atkdown': 'Lowers the chance of receiving ATK reduction by [x]%',
     'immob': 'Lowers the chance of being immobilized by [x]%',
     'seal': 'Lowers the chance of being jutsu sealed by [x]%',
+    'chakraseal': 'Lowers the chance of being chakra recovery sealed by [x]%',
     'slip': 'Lowers the chance of receiving slip damage by [x]%',
     'hpseal': 'Lowers the chance of being HP recovery sealed by [x]%',
     'atkdownnull': 'Nullifies ATK Reduction (Excluding Field Effects and F Skills)',

@@ -387,7 +387,7 @@ directives.addPvpAbilities = function($stateParams, $rootScope) {
                     var PVPvalue= window.details[$stateParams.id]['PVPablD'][y];
                     var PVPfullAbility = PVPdesc.toString().replace('[x]', PVPvalue);
                     var PVPdecorated = PVPfullAbility.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
-                    element.append($('<tr><td><img src="img/ability/'+ abl + '.png"> ' + PVPdecorated + '</td></tr>'));
+                    element.append($('<tr><td><img src="img/ability/'+ PVPabl + '.png"> ' + PVPdecorated + '</td></tr>'));
                   }
                   //fallback to regular ablity if blank
                   else

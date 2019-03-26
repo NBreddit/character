@@ -451,6 +451,210 @@ window.evolutions = {
     evolution: 501,
     evolvers: [ 'hrt4', 'hrt4', 'hrt3', 'hrt3' ]
   },
+  502: {
+    evolution: 503,
+    evolvers: [ 'brv3','brv3','brv4','brv4' ]
+  },
+  504: {
+      evolution: 505,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  506: {
+      evolution: 507,
+      evolvers: [ 'brv3','brv3','brv4','brv4' ]
+  },
+  508: {
+      evolution: 509,
+      evolvers: [ 'hrt4','hrt4','hrt4','hrt4' ]
+  },
+  510: {
+      evolution: 511,
+      evolvers: [ 'brv4','brv4','brv4','brv4' ]
+  },
+  512: {
+      evolution: 513,
+      evolvers: [ 'skl4','skl4','skl4','skl4' ]
+  },
+  515: {
+      evolution: 516,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  517: {
+      evolution: 518,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  520: {
+      evolution: 521,
+      evolvers: [ 'hrt4','hrt4','hrt4','hrt4' ]
+  },
+  521: {
+      evolution: 522,
+      evolvers: [ 'hrtbead','hrtbead','hrtbead','hrtbead1','hrtbead1' ]
+  },
+  523: {
+      evolution: 524,
+      evolvers: [ 'skl4','skl4','skl4','skl4' ]
+  },
+  524: {
+      evolution: 525,
+      evolvers: [ 'sklbead','sklbead','sklbead','sklbead1','sklbead1' ]
+  },
+  526: {
+      evolution: 527,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  528: {
+      evolution: 529,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  530: {
+      evolution: 531,
+      evolvers: [ 'brv3','brv3','brv4','brv4' ]
+  },
+  532: {
+      evolution: 533,
+      evolvers: [ 'brv3','brv3','brv4','brv4' ]
+  },
+  534: {
+      evolution: 535,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  537: {
+      evolution: 538,
+      evolvers: [ 'brv3','brv3','brv4','brv4','brv4' ]
+  },
+  538: {
+      evolution: 539,
+      evolvers: [ 'brvbead','brvbead','brvbead','brvbead1','brvbead1' ]
+  },
+  540: {
+      evolution: 541,
+      evolvers: [ 'bod','bod3','bod4','bod4','bod4' ]
+  },
+  541: {
+      evolution: 542,
+      evolvers: [ 'bodbead','bodbead','bodbead','bodbead1','bodbead1' ]
+  },
+  543: {
+      evolution: 544,
+      evolvers: [ 'skl3','skl3','skl4','skl4' ]
+  },
+  545: {
+      evolution: 546,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4' ]
+  },
+  547: {
+      evolution: 548,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  549: {
+      evolution: 550,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4' ]
+  },
+  551: {
+      evolution: 552,
+      evolvers: [ 'skl3','skl3','skl4','skl4' ]
+  },
+  553: {
+      evolution: 554,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  556: {
+      evolution: 557,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4','hrt4' ]
+  },
+  557: {
+      evolution: 558,
+      evolvers: [ 'hrtbead','hrtbead','hrtbead','hrtbead1','hrtbead1' ]
+  },
+  559: {
+      evolution: 560,
+      evolvers: [ 'wis3','wis3','wis4','wis4','wis4' ]
+  },
+  560: {
+      evolution: 561,
+      evolvers: [ 'wisbead','wisbead','wisbead','wisbead1','wisbead1' ]
+  },
+  562: {
+      evolution: 563,
+      evolvers: [ 'skl3','skl3','skl4','skl4' ]
+  },
+  564: {
+      evolution: 565,
+      evolvers: [ 'hrt2','hrt2','hrt3','hrt3' ]
+  },
+  566: {
+      evolution: 567,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4' ]
+  },
+  568: {
+      evolution: 569,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  570: {
+      evolution: 571,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4' ]
+  },
+  573: {
+      evolution: 574,
+      evolvers: [ 'bod','bod3','bod4','bod4','bod4' ]
+  },
+  574: {
+      evolution: 575,
+      evolvers: [ 'bodbead','bodbead','bodbead','bodbead1','bodbead1' ]
+  },
+  576: {
+      evolution: 577,
+      evolvers: [ 'brv3','brv3','brv4','brv4','brv4' ]
+  },
+  577: {
+      evolution: 578,
+      evolvers: [ 'brvbead','brvbead','brvbead','brvbead1','brvbead1' ]
+  },
+  579: {
+      evolution: 580,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  581: {
+      evolution: 582,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  583: {
+      evolution: 584,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4' ]
+  },
+  585: {
+      evolution: 586,
+      evolvers: [ 'skl3','skl3','skl4','skl4' ]
+  },
+  587: {
+      evolution: 588,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  589: {
+      evolution: 590,
+      evolvers: [ 'brv4','brv4','brv4','brv4','brv4' ]
+  },
+  591: {
+      evolution: 592,
+      evolvers: [ 'wis3','wis3','wis4','wis4' ]
+  },
+  593: {
+      evolution: 594,
+      evolvers: [ 'hrt4','hrt4','hrt4','hrt4','hrt4' ]
+  },
+  596: {
+      evolution: 597,
+      evolvers: [ 'bod3','bod3','bod4','bod4' ]
+  },
+  598: {
+      evolution: 599,
+      evolvers: [ 'hrt3','hrt3','hrt4','hrt4','hrt4' ]
+  },
+  599: {
+      evolution: 600,
+      evolvers: [ 'hrtbead','hrtbead','hrtbead','hrtbead1','hrtbead1' ]
+  },
   601: {
     evolution: 602,
     evolvers: [ 'skl4','skl4','skl4','skl3','skl3' ]
@@ -802,5 +1006,33 @@ window.evolutions = {
   773: {
     evolution: 774,
     evolvers: ['bod4','bod4','bod4','bod3']
+  },
+  775: {
+    evolution: 776,
+    evolvers: ['wis3','wis3','wis2','wis2']
+  },
+  778: {
+    evolution: 779,
+    evolvers: ['brv4','brv4','brv3','brv3']
+  },
+  780: {
+    evolution: 781,
+    evolvers: [ 'hrt4', 'hrt4', 'hrt4', 'hrt3', 'hrt3' ]
+  },
+  781: {
+    evolution: 782,
+    evolvers: [ 'hrtbead1', 'hrtbead1', 'hrtbead', 'hrtbead', 'hrtbead' ]
+  },
+  784: {
+    evolution: 785,
+    evolvers: ['brv3','brv3','brv2','brv2']
+  },
+  787: {
+    evolution: 788,
+    evolvers: ['bod4','bod4','bod4','bod4', 'bod4']
+  },
+  789: {
+    evolution: 790,
+    evolvers: [ 'ashurabead1', 'ashurabead1', 'ashurabead1', 'ashurabead', 'ashurabead' ]
   },
 };
