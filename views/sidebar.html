@@ -2,7 +2,7 @@
 
 <div class="filter-container">
     <span class="filter-header">Type filters</span>
-    <span ng-model="filters.type" ng-repeat="(n,type) in [ 'STR', 'QCK', 'DEX', 'PSY', 'INT' ]"
+    <span ng-model="filters.type" ng-repeat="(n,type) in [ 'hrt', 'skl', 'bod', 'brv', 'wis' ]"
         class="filter {{n < 3 ? 'width-4' : 'width-6'}} type {{type}}" ng-class="{ active: filters.type == type }"
         ng-click="onFilterClick($event,type)">{{type}}</span>
 </div>

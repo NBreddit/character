@@ -134,106 +134,6 @@ directives.autoFocus = function($timeout) {
 	};
 };
 
-directives.addSailorOptions = function($timeout, $compile, MATCHER_IDS) {
-    //TO DO ONCE WE FIND OUT WHAT SAILOR ABILITIES DO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    var TARGET = MATCHER_IDS['sailor.ClassBoostingSailors'];
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            if (scope.n !== TARGET) return;
-            var filter = $('<div id="class-filters" ng-class="{ enabled: filters.custom[' + TARGET + '] }"></div>');
-            var classes = [ 'Fighter', 'Shooter', 'Slasher', 'Striker', 'Free Spirit', 'Cerebral', 'Powerhouse', 'Driven' ];
-            classes.forEach(function(x,n) {
-                var template = '<span class="filter subclass %c" ng-class="{ active: filters.classSailor == \'%s\' }" ' +
-                    'ng-click="onSailorClick($event,\'%s\')">%s</span>';
-                filter.append($(template.replace(/%s/g,x).replace(/%c/,'width-6')));
-            });
-            element.after(filter);
-            $compile(filter)(scope);
-            scope.onSailorClick = function(e,type) {
-                scope.filters.classSailor = (scope.filters.classSailor == type ? null : type);
-            };
-        }
-    };
-};
-
-directives.addSpecialOptions = function($timeout, $compile, MATCHER_IDS) {
-    var TARGET = MATCHER_IDS['special.ClassBoostingSpecials'];
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            if (scope.n !== TARGET) return;
-            var filter = $('<div id="class-filters" ng-class="{ enabled: filters.custom[' + TARGET + '] }"></div>');
-            var classes = [ 'Fighter', 'Shooter', 'Slasher', 'Striker', 'Free Spirit', 'Cerebral', 'Powerhouse', 'Driven' ];
-            classes.forEach(function(x,n) {
-                var template = '<span class="filter subclass %c" ng-class="{ active: filters.classSpecial == \'%s\' }" ' +
-                    'ng-click="onSpecialClick($event,\'%s\')">%s</span>';
-                filter.append($(template.replace(/%s/g,x).replace(/%c/,'width-6')));
-            });
-            element.after(filter);
-            $compile(filter)(scope);
-            scope.onSpecialClick = function(e,type) {
-                scope.filters.classSpecial = (scope.filters.classSpecial == type ? null : type);
-            };
-        }
-    };
-};
-
-directives.addOrbOptions = function($timeout, $compile, MATCHER_IDS) {
-    var TARGET = MATCHER_IDS['special.OrbControllers'];
-    return {
-        restrict: 'A',
-        link: function(scope,element,attrs) {
-            if (scope.n !== TARGET) return;
-            var orbs = { ctrlFrom: [ ], ctrlTo: [ ] };
-            var filter = $('<div id="controllers" ng-class="{ enabled: filters.custom[' + TARGET + '] }">' +
-                    '<span class="separator">&darr;</span></div>');
-            var separator = filter.find('.separator');
-            [ 'STR', 'DEX', 'QCK', 'PSY', 'INT', 'RCV', 'TND', 'BLOCK', 'EMPTY', 'BOMB', 'G' ].forEach(function(type) {
-                var template = '<span class="filter orb %s" ng-class="{ active: filters.%f.indexOf(\'%s\') > -1 }" ' +
-                    'ng-model="filters.%f" ng-click="onOrbClick($event,\'%s\')">%S</span>';
-                separator.before($(template.replace(/%s/g,type).replace(/%S/g,type[0]).replace(/%f/g,'ctrlFrom')));
-                filter.append($(template.replace(/%s/g,type).replace(/%S/g,type[0]).replace(/%f/g,'ctrlTo')));
-            });
-            element.after(filter);
-            $compile(filter)(scope);
-            scope.onOrbClick = function(e,type) {
-                var target = e.target.getAttribute('ng-model');
-                if (!target) return;
-                target = target.match(/filters\.(.+)$/)[1];
-                if (orbs[target].indexOf(type) == -1) orbs[target].push(type);
-                else orbs[target].splice(orbs[target].indexOf(type), 1);
-                orbs[target] = orbs[target].slice(-2);
-                scope.filters[target] = orbs[target];
-            };
-        }
-    };
-};
-
-directives.addDebuffOptions = function($timeout, $compile, MATCHER_IDS) {
-    var TARGET = MATCHER_IDS['special.DebuffReducingSpecials'];
-    return {
-        restrict: 'A',
-        link: function(scope, element, attrs) {
-            if (scope.n !== TARGET) return;
-            var filter = $('<div id="debuff" ng-class="{ enabled: filters.custom[' + TARGET + '] }"></div>');
-            var debuffs = [ 'Bind', 'Despair', 'Silence', 'Paralysis', 'Blindness', 'Poison', 'Anti-Healing', 'Chain Limit' ];
-            debuffs.forEach(function(x,n) {
-                var template = '<span class="filter debuff %c" ng-class="{ active: filters.debuffs == \'%s\' }" ' +
-                    'ng-click="onDebuffClick($event,\'%s\')">%s</span>';
-                filter.append($(template.replace(/%s/g,x).replace(/%c/,'width-6')));
-            });
-            element.after(filter);
-            $compile(filter)(scope);
-            scope.onDebuffClick = function(e,type) {
-                //console.log(scope.filters.debuffs);
-                scope.filters.debuffs = (scope.filters.debuffs == type ? null : type);
-            };
-        }
-    };
-};
-
 directives.goBack = function($state) {
 	return {
 		restrict: 'A',
@@ -311,11 +211,26 @@ directives.addField = function($stateParams, $rootScope) {
           var field = window.details[$stateParams.id].field;
           var key = field[0];
           var desc = window.fieldbuddy[0][key];
-          var value= field[1];
-          var fullText = desc.toString().replace('[x]', value);
-          var decorated = fullText.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
 
-          element.append($('<tr><td>' + decorated + '</td></tr>'));
+          //if normal field skill
+          if (field[1].constructor != Array) {
+            var value = field[1];
+            var fullText = desc.toString().replace('[x]', value);
+            var decorated = fullText.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
+
+            element.append($('<tr><td>' + decorated + '</td></tr>'));
+          }
+          //handling for hybrid field skills with 2 attributes
+          else {
+            var value1 = field[1][0];
+            var value2 = field[1][1];
+
+            var fullText = desc.toString().replace('[x]', value1);
+            fullText = fullText.toString().replace('[y]', value2);
+            var decorated = fullText.replace(/\[?(HRT|BOD|SKL|BRV|WIS)\]?/g,'<span class="badge $1">$1</span>');
+
+            element.append($('<tr><td>' + decorated + '</td></tr>'));
+          }
         }
     }
 };

@@ -121,18 +121,14 @@ input[type="text"] {
     height: 73px;
 }
 
-.HRT     { background: salmon; }
-.BOD     { background: lightskyblue; }
-.SKL     { background: lightgreen; }
-.BRV     { background: gold; }
-.WIS     { background: orchid; }
-.RCV     { background: sandybrown; }
-.TND     { background: peru; }
-.BLOCK   { background: darkslateblue; }
-.BOMB    { background: maroon; }
-.RAINBOW { background: linear-gradient(90deg,#fa8072,#ffd700,#90ee90,#87cefa, #da70d6); }
-.G       { background: orange; }
-.EMPTY   { background: #777; }
+.hrt, .bod, .skl,
+.brv, .wis {text-transform:uppercase;}
+
+.hrt, .HRT     { background: salmon; }
+.bod, .BOD     { background: lightskyblue; }
+.skl, .SKL     { background: lightgreen; }
+.brv, .BRV     { background: gold; }
+.wis, .WIS     { background: orchid; }
 
 .doubleAffil {display:inline-flex;}
 

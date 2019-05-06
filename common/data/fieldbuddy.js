@@ -27,5 +27,8 @@ window.fieldbuddy = [
     "switchseal": "Lowers the chance of being switch sealed by [x]%",
     "atkred": "Lowers the chance of receiving ATK reduction by [x]%",
     "heal": "Restores [x] HP",
+
+    //hybrids
+    "critatk": "Boosts critical rate by [x]x and ATK by [y]"
   }
 ];
